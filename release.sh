@@ -22,7 +22,7 @@ TOOL3='ISE-13.1'
 VER3='1.0'
 
 # Project 4 description
-NAME4='GigaBee_XC6LX-MIG'
+NAME4='GigaBee_XC6SLX-MIG'
 TOOL4='ISE-12.4'
 VER4='1.0'
 
