@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator M.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\Projekti\CAMOS\ISE\Blinkin\//blinkin_LX150 -s 65536 -u 0000 D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit -spi 
+
+PROM D:\Projekti\CAMOS\ISE\Blinkin\blinkin_LX150.prm map: Thu Mar 24 16:57:08 2011
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          65536K
+PROM start    0000:0000
+PROM end      03ff:ffff
+PROM checksum bbe9125b
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0040:6577     Mar 24 13:56:37 2011 D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit

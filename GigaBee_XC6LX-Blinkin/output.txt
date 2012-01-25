@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+Auto Select Storage Device
+FF
+Untitled
+D:\Projekti\CAMOS\Beyond\bistream
+
+MCS
+CS

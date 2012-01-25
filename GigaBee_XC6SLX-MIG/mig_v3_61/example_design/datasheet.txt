@@ -1,0 +1,131 @@
+
+
+CORE Generator Options:
+   Target Device              : xc6slx100-fgg484
+   Speed Grade                : -2
+   HDL                        : vhdl
+   Synthesis Tool             : ISE
+
+MIG Output Options:
+   Component Name             : mig_v3_61
+   No of Controllers          : 2
+   Hardware Test Bench           : enabled
+
+    
+/*******************************************************/
+/*                  Controller 1                       */
+/*******************************************************/
+Controller Options : 
+   Memory                  : DDR3_SDRAM
+   Design Clock Frequency  : 3000 ps (333.33 MHz)
+   Memory Type             : Components
+   Memory Part             : MT41J128M16XX-187E
+   Equivalent Part(s)      : MT41J128M16HA-187E
+   Row Address             : 14
+   Column Address          : 10
+   Bank Address            : 3
+   Data Mask               : enabled
+
+Memory Options :
+   Burst Length                       : 8(00)
+   CAS Latency                        : 6
+   TDQS enable                        : Disabled
+   DLL Enable                         : Enable
+   Write Leveling Enable              : Disabled
+   Output Drive Strength              : RZQ/6
+   Additive Latency (AL)              : 0
+   RTT (nominal) - ODT                : RZQ/4       
+   Auto Self Refresh                  : Enabled
+   CAS write latency                  : 5
+   Partial-Array Self Refresh         : Full Array
+   High Temparature Self Refresh Rate : Normal
+
+User Interface Parameters :
+   Configuration Type     : One 64-bit bi-directional and two 32-bit bi-directional ports
+   Ports Selected         : Port0, Port1, Port2
+   Memory Address Mapping : ROW_BANK_COLUMN
+
+   Arbitration Algorithm  : Round Robin
+
+   Arbitration            : 
+      Time Slot0 : 012
+      Time Slot1 : 120
+      Time Slot2 : 201
+      Time Slot3 : 012
+      Time Slot4 : 120
+      Time Slot5 : 201
+      Time Slot6 : 012
+      Time Slot7 : 120
+      Time Slot8 : 201
+      Time Slot9 : 012
+      Time Slot10: 120
+      Time Slot11: 201
+
+FPGA Options :
+   Class for Address and Control       : II
+   Class for Data                      : II
+   Memory Interface Pin Termination    : CALIB_TERM
+   DQ/DQS                              : 25 Ohms
+   Bypass Calibration                  : enabled
+   Debug Signals for Memory Controller : Disable
+   Input Clock Type                    : Differential 
+    
+
+/*******************************************************/
+/*                  Controller 3                       */
+/*******************************************************/
+Controller Options : 
+   Memory                  : DDR3_SDRAM
+   Design Clock Frequency  : 3000 ps (333.33 MHz)
+   Memory Type             : Components
+   Memory Part             : MT41J128M16XX-187E
+   Equivalent Part(s)      : MT41J128M16HA-187E
+   Row Address             : 14
+   Column Address          : 10
+   Bank Address            : 3
+   Data Mask               : enabled
+
+Memory Options :
+   Burst Length                       : 8(00)
+   CAS Latency                        : 6
+   TDQS enable                        : Disabled
+   DLL Enable                         : Enable
+   Write Leveling Enable              : Disabled
+   Output Drive Strength              : RZQ/6
+   Additive Latency (AL)              : 0
+   RTT (nominal) - ODT                : RZQ/4       
+   Auto Self Refresh                  : Enabled
+   CAS write latency                  : 5
+   Partial-Array Self Refresh         : Full Array
+   High Temparature Self Refresh Rate : Normal
+
+User Interface Parameters :
+   Configuration Type     : One 64-bit bi-directional and two 32-bit bi-directional ports
+   Ports Selected         : Port0, Port1, Port2
+   Memory Address Mapping : ROW_BANK_COLUMN
+
+   Arbitration Algorithm  : Round Robin
+
+   Arbitration            : 
+      Time Slot0 : 012
+      Time Slot1 : 120
+      Time Slot2 : 201
+      Time Slot3 : 012
+      Time Slot4 : 120
+      Time Slot5 : 201
+      Time Slot6 : 012
+      Time Slot7 : 120
+      Time Slot8 : 201
+      Time Slot9 : 012
+      Time Slot10: 120
+      Time Slot11: 201
+
+FPGA Options :
+   Class for Address and Control       : II
+   Class for Data                      : II
+   Memory Interface Pin Termination    : CALIB_TERM
+   DQ/DQS                              : 25 Ohms
+   Bypass Calibration                  : enabled
+   Debug Signals for Memory Controller : Disable
+   Input Clock Type                    : Differential 
+    

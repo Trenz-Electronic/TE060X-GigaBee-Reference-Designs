@@ -1,0 +1,422 @@
+iMPACT Version: 12.4
+
+iMPACT log file Started on Thu Mar 24 16:43:20 2011
+
+Welcome to iMPACT
+iMPACT Version: 12.4
+// *** BATCH CMD : loadProjectFile -file"D:\Projekti\CAMOS\ISE\Blinkin\auto_project.ipf"
+Enumerating cables. Please wait.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusbdfwu.sys found.
+ Driver version: src=1027, dest=1027.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+=======================================================
+Found cable - >  ESN device is not available for this cable.
+No ESN.
+=======================================================
+Connecting to cable (Usb Port - USB22).
+Checking cable driver.
+ Driver file xusbdfwu.sys found.
+ Driver version: src=1027, dest=1027.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ERROR:iMPACT - Cable not found, ESN: 00000000000000
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/12.4/ISE_DS/ISE/spartan6/data/xc6slx150.bsd...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 4.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+Unprotect sectors: FALSE
+INFO:iMPACT - A CFI file is not detected. To ensure correct and safe   configuration,
+    Please make sure a CFI file is present in the same directory as the PROM   file,
+    or, regenerate the PROM file with the latest software.
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin_LX100.bit' ...
+INFO:iMPACT - Elapsed time =      1 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc6slx100 successfully.
+----------------------------------------------------------------------
+'1': Added Device 8M successfully.
+----------------------------------------------------------------------
+Active mode is BS
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : attachflash -position 1 -spi "W25Q64BV"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: Wizard Data Report  ---------------------------
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : false
+      LoadDirection : UP
+      PROM Basename : blinkin
+      File Location : D:\Projekti\CAMOS\ISE\Blinkin\/
+      Auto Select : false
+      Number of Revisions : 1
+      Number of PROMs : 1
+      PROM Name : 8M   PROM Size : 8388608 bits
+        ------ Revision: 0 '0', 1 device(s) chain -----
+        Device 0, pn=xc6slx100   fn=blinkin_LX100.bit
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setMode -bs
+Project: 'D:\Projekti\CAMOS\ISE\Blinkin\auto_project.ipf' loaded.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+Welcome to iMPACT
+iMPACT Version: 12.4
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusbdfwu.sys found.
+ Driver version: src=1027, dest=1027.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1029.
+File version of C:/Xilinx/12.4/ISE_DS/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+Downloading C:/Xilinx/12.4/ISE_DS/ISE/data/xusb_xlp.hex.
+Downloaded firmware version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Type = 0x0004.
+ ESN device is not available for this cable.
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: èet 24. mar 16:44:49 2011
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx150, Version : 3
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/12.4/ISE_DS/ISE/spartan6/data/xc6slx150.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+Selected part: W25Q64BV
+// *** BATCH CMD : attachflash -position 1 -spi "W25Q64BV"
+Unprotect sectors: FALSE
+// *** BATCH CMD : assignfiletoattachedflash -position 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.mcs"
+INFO:iMPACT - Current time: èet 24. mar 16:45:33 2011
+// *** BATCH CMD : Program -p 1 -dataWidth 4 -spionly -e -v -loadfpga 
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': IDCODE is '16' (in hex).
+'1': ID Check passed.
+'1': IDCODE is '16' (in hex).
+'1': ID Check passed.
+PROGRESS_START - Starting Operation.
+'1': Erasing Device.
+'1': Using Sector Erase.
+'1': Programming Flash.
+'1': Reading device contents...
+done.
+'1': Verification completed.
+'1':Programming in x4 mode.
+W25Q64BV Status Register Contents = 0x0200.
+QUAD ENABLE                                       :         1
+STATUS REGISTER PROTECT 1                         :         0
+STATUS REGISTER PROTECT 0                         :         0
+SECTOR PROTECT                                    :         0
+TOP/BOTTOM PROTECT                                :         0
+BLOCK PROTECT BIT 2                               :         0
+BLOCK PROTECT BIT 1                               :         0
+BLOCK PROTECT BIT 0                               :         0
+'1': Configuration data download to FPGA was not successful. DONE did not gohigh, please check your configuration setup and mode settings.
+INFO:iMPACT - '1': Flash was not programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =    492 sec.
+// *** BATCH CMD : assignFile -p 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit"
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 4.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: èet 24. mar 16:55:53 2011
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      9 sec.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "blinkin_LX150" -path"D:\Projekti\CAMOS\ISE\Blinkin\"
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : addDesign -version 0 -name "0"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "TRUE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "TRUE"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: Wizard Data Report  ---------------------------
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : false
+      LoadDirection : UP
+      PROM Basename : blinkin_LX150
+      File Location : D:\Projekti\CAMOS\ISE\Blinkin\/
+      Auto Select : true
+      Number of Revisions : 1
+      Number of PROMs : 0
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setAttribute -design -attr name -value "0000"
+// *** BATCH CMD : addDevice -p 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit"
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+INFO:iMPACT - Elapsed time =      2 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+Add one device.4068c5INFO:iMPACT - Current time: èet 24. mar 16:57:03 2011
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffspi
+Total configuration bit size = 33762240  bits.
+Total configuration byte size = 4220280 bytes.
+// *** BATCH CMD : generate -generic
+'1': Added Device 64m successfully.
+----------------------------------------------------------------------
+0x406578 (4220280) bytes loaded up from 0x0
+Using user-specified prom size of 65536K
+Writing file "D:\Projekti\CAMOS\ISE\Blinkin\blinkin_LX150.mcs".
+Writing file "D:\Projekti\CAMOS\ISE\Blinkin\blinkin_LX150.prm".
+Writing file "D:\Projekti\CAMOS\ISE\Blinkin\blinkin_LX150.cfi".
+// *** BATCH CMD : setCurrentDesign -version 0
+INFO:iMPACT - One or more bitstream may have the data width set to a value other   than '1',
+   if the targeted device is not designed for the specified data width,
+   the generated PROM file will not work properly.
+// *** BATCH CMD : setMode -bs
+Selected part: W25Q64BV
+// *** BATCH CMD : attachflash -position 1 -spi "W25Q64BV"
+Unprotect sectors: FALSE
+// *** BATCH CMD : assignfiletoattachedflash -position 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin_LX150.mcs"
+INFO:iMPACT - Current time: èet 24. mar 16:57:45 2011
+// *** BATCH CMD : Program -p 1 -dataWidth 4 -spionly -e -v -loadfpga 
+Maximum TCK operating frequency for this device chain: 25000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': SPI access core not detected. SPI access core will be downloaded to thedevice to enable operations.
+INFO:iMPACT - Downloading core file   C:/Xilinx/12.4/ISE_DS/ISE/spartan6/data/xc6slx150_spi.cor.
+PROGRESS_START - Starting Operation.
+'1': Downloading core...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:2492 - '1': Completed downloading core to device.
+'1': IDCODE is '16' (in hex).
+'1': ID Check passed.
+'1': IDCODE is '16' (in hex).
+'1': ID Check passed.
+'1': Erasing Device.
+'1': Using Sector Erase.
+'1': Programming Flash.
+'1': Reading device contents...
+done.
+'1': Verification completed.
+'1':Programming in x4 mode.
+W25Q64BV Status Register Contents = 0x0200.
+QUAD ENABLE                                       :         1
+STATUS REGISTER PROTECT 1                         :         0
+STATUS REGISTER PROTECT 0                         :         0
+SECTOR PROTECT                                    :         0
+TOP/BOTTOM PROTECT                                :         0
+BLOCK PROTECT BIT 2                               :         0
+BLOCK PROTECT BIT 1                               :         0
+BLOCK PROTECT BIT 0                               :         0
+'1': Programmed successfully.
+INFO:iMPACT - '1': Flash was programmed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =    559 sec.
+INFO:iMPACT - Current time: èet 24. mar 18:20:50 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+// *** BATCH CMD : assignFile -p 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit"
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 4.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: èet 24. mar 18:21:10 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: èet 24. mar 18:21:30 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+// *** BATCH CMD : assignFile -p 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit"
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 4.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: èet 24. mar 18:21:54 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: èet 24. mar 18:22:08 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: èet 24. mar 18:23:13 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: èet 24. mar 18:23:29 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: èet 24. mar 18:24:06 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+// *** BATCH CMD : assignFile -p 1 -file"D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit"
+'1': Loading file 'D:/Projekti/CAMOS/ISE/Blinkin/blinkin.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 4.
+INFO:iMPACT:501 - '1': Added Device xc6slx150 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: èet 24. mar 18:24:28 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: èet 24. mar 18:24:46 2011
+ Cable is LOCKED. Retrying...
+The selected cable is being used by another application.
+ Please retry the current operation.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"D:/Projekti/CAMOS/ISE/Blinkin/auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   D:\Projekti\CAMOS\ISE\Blinkin/webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+ Cable is LOCKED. Retrying...
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1

@@ -1,0 +1,51 @@
+#FPGA size specific constraints
+#PLL placement
+#necesarry for LX100 and LX150 devices
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+#necesarry for LX45 devices
+#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
+
+#
+# pin constraints
+#
+NET CLK LOC=AA12 | IOSTANDARD = LVCMOS15;
+NET DIP_Switches_4Bits_TRI_I[0] LOC = U19 |  IOSTANDARD = LVCMOS15; #AV0
+NET DIP_Switches_4Bits_TRI_I[1] LOC = V20 |  IOSTANDARD = LVCMOS15; #AV1
+NET DIP_Switches_4Bits_TRI_I[2] LOC = M17 |  IOSTANDARD = LVCMOS15; #AV2
+NET DIP_Switches_4Bits_TRI_I[3] LOC = M18 |  IOSTANDARD = LVCMOS15; #AV3
+NET Ethernet_Lite_COL LOC = R13;
+NET Ethernet_Lite_CRS LOC = T14;
+NET Ethernet_Lite_MDC LOC = AA2;
+NET Ethernet_Lite_MDIO LOC = AB3;
+NET Ethernet_Lite_PHY_RST_N LOC = T15  |  TIG;
+NET Ethernet_Lite_RXD[0] LOC = Y3;
+NET Ethernet_Lite_RXD[1] LOC = W8;
+NET Ethernet_Lite_RXD[2] LOC = W4;
+NET Ethernet_Lite_RXD[3] LOC = U9;
+NET Ethernet_Lite_RX_CLK LOC = Y11;
+NET Ethernet_Lite_RX_DV LOC = Y4;
+NET Ethernet_Lite_RX_ER LOC = Y8;
+NET Ethernet_Lite_TXD[0] LOC = AA18;
+NET Ethernet_Lite_TXD[1] LOC = AB14;
+NET Ethernet_Lite_TXD[2] LOC = AA16;
+NET Ethernet_Lite_TXD[3] LOC = W14;
+NET Ethernet_Lite_TX_CLK LOC = R11;
+NET Ethernet_Lite_TX_EN LOC = AB16;
+NET LEDs_4Bits_TRI_O[0] LOC = T20  |  IOSTANDARD = LVCMOS33; #on board
+NET LEDs_4Bits_TRI_O[1] LOC = H8  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_TRI_O[2] LOC = J7  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_TRI_O[3] LOC = T4  |  IOSTANDARD = LVCMOS15;
+NET Push_Buttons_4Bits_TRI_I[0] LOC = P17 |  IOSTANDARD = LVCMOS15; #BR0
+NET Push_Buttons_4Bits_TRI_I[1] LOC = N16  |  IOSTANDARD = LVCMOS15; #BR1
+NET Push_Buttons_4Bits_TRI_I[2] LOC = P18  |  IOSTANDARD = LVCMOS15; #BR2
+NET Push_Buttons_4Bits_TRI_I[3] LOC = R19  |  IOSTANDARD = LVCMOS15; #BR3
+NET RESET LOC = W22  |  IOSTANDARD = "LVCMOS15"  |  TIG | PULLDOWN; #dummy
+NET RS232_Uart_1_sin LOC=C17 | PULLUP  |  IOSTANDARD = LVCMOS33;
+NET RS232_Uart_1_sout LOC = A17  |  IOSTANDARD = LVCMOS33;
+#
+# additional constraints
+#
+
+NET "CLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 125000 kHz;
+
