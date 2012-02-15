@@ -1,0 +1,66 @@
+# Constraints for GigaBee Board
+
+Net sys_clk LOC=AA12;
+Net sys_clk IOSTANDARD = LVCMOS33;
+
+## System level constraints
+Net sys_clk TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk 8 ns;
+
+# LED 4x
+
+Net led<0> LOC=H8 | IOSTANDARD = LVCMOS15;
+Net led<1> LOC=J7 | IOSTANDARD = LVCMOS15;
+Net led<2> LOC=T4 | IOSTANDARD = LVCMOS15;
+Net led<3> LOC=T3 | IOSTANDARD = LVCMOS15;
+
+#### Module GMII - Ethernet constraints
+
+Net tx_data<7> LOC = AA14  |  IOSTANDARD = LVCMOS33;
+Net tx_data<6> LOC = V15   |  IOSTANDARD = LVCMOS33;
+Net tx_data<5> LOC = Y14   |  IOSTANDARD = LVCMOS33;
+Net tx_data<4> LOC = T16   |  IOSTANDARD = LVCMOS33;
+Net tx_data<3> LOC = W14   |  IOSTANDARD = LVCMOS33;
+Net tx_data<2> LOC = AA16  |  IOSTANDARD = LVCMOS33;
+Net tx_data<1> LOC = AB14  |  IOSTANDARD = LVCMOS33;
+Net tx_data<0> LOC = AA18  |  IOSTANDARD = LVCMOS33;
+Net tx_en LOC = AB16       |  IOSTANDARD = LVCMOS33;
+Net tx_er LOC = AB18       |  IOSTANDARD = LVCMOS33;
+Net tx_clk LOC = R11       |  IOSTANDARD = LVCMOS33;
+Net rx_data<7> LOC = U6    |  IOSTANDARD = LVCMOS33;
+Net rx_data<6> LOC = W9    |  IOSTANDARD = LVCMOS33;
+Net rx_data<5> LOC = V5    |  IOSTANDARD = LVCMOS33;
+Net rx_data<4> LOC = V7    |  IOSTANDARD = LVCMOS33;
+Net rx_data<3> LOC = U9    |  IOSTANDARD = LVCMOS33;
+Net rx_data<2> LOC = W4    |  IOSTANDARD = LVCMOS33;
+Net rx_data<1> LOC = W8    |  IOSTANDARD = LVCMOS33;
+Net rx_data<0> LOC = Y3    |  IOSTANDARD = LVCMOS33;
+Net rx_dv LOC = Y4         |  IOSTANDARD = LVCMOS33;
+Net rx_er LOC = Y8         |  IOSTANDARD = LVCMOS33;
+Net rx_clk LOC = Y11       |  IOSTANDARD = LVCMOS33;
+Net rstn LOC = T15 |  IOSTANDARD = LVCMOS33  |  TIG;
+
+# Input probes pins
+#Net inProbes* IOSTANDARD = LVCMOS33;
+#Net inProbes<0>  LOC = Y7;
+#Net inProbes<1>  LOC = AB7;
+#Net inProbes<2>  LOC = AA8;
+#Net inProbes<3>  LOC = AB8;
+#Net inProbes<4>  LOC = Y9;
+#Net inProbes<5>  LOC = AB9;
+#Net inProbes<6>  LOC = AA10;
+#Net inProbes<7>  LOC = AB10;
+#Net inProbes<8>  LOC = ;
+#Net inProbes<9>  LOC = ;
+#Net inProbes<10> LOC = ;
+#Net inProbes<11> LOC = ;
+#Net inProbes<12> LOC = ;
+#Net inProbes<13> LOC = ;
+#Net inProbes<14> LOC = ;
+#Net inProbes<15> LOC = ;
+
+# Clock domain crossing
+NET "*/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<*>" TIG;
+NET "*/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<*>" TIG;
+NET "rst_inst/done" TIG;
+

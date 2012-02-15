@@ -1,0 +1,12 @@
+# Output products list for <event_fifo>
+event_fifo.asy
+event_fifo.gise
+event_fifo.ngc
+event_fifo.vhd
+event_fifo.vho
+event_fifo.xco
+event_fifo.xise
+event_fifo_flist.txt
+event_fifo_xmdf.tcl
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf
