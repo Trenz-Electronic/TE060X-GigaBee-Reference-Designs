@@ -1,0 +1,40 @@
+################################################################################
+# Copyright (C) 2012 Trenz Electronic
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a 
+# copy of this software and associated documentation files (the "Software"), 
+# to deal in the Software without restriction, including without limitation 
+# the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+# and/or sell copies of the Software, and to permit persons to whom the 
+# Software is furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included 
+# in all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+# IN THE SOFTWARE.
+################################################################################
+# xc6slx45-2fgg484 xc6slx100-2fgg484 xc6slx150-2fgg484
+
+Net clk LOC=AA12; #125MHz clock
+Net clk IOSTANDARD = LVCMOS33;
+
+Net rst LOC=A4; #dummy
+Net rst IOSTANDARD = LVCMOS33 | PULLDOWN;
+
+Net led LOC=T20; #LED
+Net *led* IOSTANDARD = LVCMOS33;
+
+Net aux_led<0> LOC=H8; #LED B2B_B3_L59_N
+Net aux_led<1> LOC=J7; #LED B2B_B3_L59_P
+Net aux_led<2> LOC=T4; #LED B2B_B3_L9_P
+Net aux_led<3> LOC=T3; #LED B2B_B3_L9_N
+
+#Net phy_reset_n LOC=T15 | IOSTANDARD = LVCMOS33; #PHY RESET_N
+#Net reprog_n LOC=H16 | IOSTANDARD = LVCMOS33; #REPROGRAMMING 
+#Net wdi LOC=V9 | IOSTANDARD = LVCMOS33; #WATCHDOG INPUT

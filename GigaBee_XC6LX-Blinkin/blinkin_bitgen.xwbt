@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin\blinkin.ncd
+OUTFILE=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin\blinkin.bit
+FAMILY=Spartan6
+PART=xc6slx150-2fgg484
+WORKINGDIR=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin
+LICENSE=ISE
+USER_INFO=No user information available.
