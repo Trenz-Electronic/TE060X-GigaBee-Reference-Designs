@@ -4,7 +4,7 @@
   <IDENTIFICATION VERSION="1.2" XTLVERSION="1.2"/>
 
   <SET CLASS="PROJECT" DISPLAYMODE="TREE" VIEW_ID="BUSINTERFACE">
-    <HEADERS HSCROLL="0" VSCROLL="177">
+    <HEADERS HSCROLL="0" VSCROLL="313">
       <VARIABLE COL_INDEX="0" COL_WIDTH="233" IS_VISIBLE="TRUE" VIEWDISP="Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="1" COL_WIDTH="241" IS_VISIBLE="TRUE" VIEWDISP="Bus Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Bus Standard" VIEWTYPE="HEADER"/>
@@ -31,8 +31,9 @@
       <VARIABLE ID="microblaze_0_i_bram_ctrl" ROW_INDEX="7"/>
       <VARIABLE ID="microblaze_0_d_bram_ctrl" ROW_INDEX="6"/>
       <VARIABLE ID="microblaze_0_bram_block" ROW_INDEX="5"/>
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="19"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="20"/>
       <VARIABLE ID="clock_generator_0" ROW_INDEX="18"/>
+      <VARIABLE ID="clock_generator_1" ROW_INDEX="19"/>
       <VARIABLE ID="debug_module" ROW_INDEX="9"/>
       <VARIABLE ID="RS232_Uart_1" ROW_INDEX="17"/>
       <VARIABLE ID="DIP_Switches_4Bits" ROW_INDEX="13"/>

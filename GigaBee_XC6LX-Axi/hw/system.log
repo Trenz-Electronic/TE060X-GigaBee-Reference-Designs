@@ -1,0 +1,456 @@
+No logfile was found.
+
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.2 Build EDK_O.61xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: axi_ethernet, INSTANCE: ETHERNET - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\system.mhs line 357 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: ETHERNET_dma - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\system.mhs line 434 
+INFO:coreutil - Hardware Evaluation license for component <axi_ethernet_soft_tri_mode> found. The generated design will cease to function in the programmed device after operating for some period of time. This allows you to evaluate the component in hardware. You are encouraged to license this component.
+For ordering information, please refer to the product page for this component on: www.xilinx.com
+
+********************************************************************************
+At Local date and time: Sun Feb 26 12:29:05 2012
+ make -f system.make hwclean started...
+rm -f implementation/system.ngc
+rm -f platgen.log
+rm -f __xps/ise/_xmsgs/platgen.xmsgs
+rm -f implementation/system.bmm
+rm -f implementation/system.bit
+rm -f implementation/system.ncd
+rm -f implementation/system_bd.bmm 
+rm -f implementation/system_map.ncd 
+rm -f implementation/download.bit 
+rm -f __xps/system_routed
+rm -rf implementation synthesis xst hdl
+rm -rf xst.srp system.srp
+rm -f __xps/ise/_xmsgs/bitinit.xmsgs
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.filters
+Done writing Tab View settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.2 Build EDK_O.61xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: axi_ethernet, INSTANCE: ETHERNET - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\_xps_tempmhsfilename.mhs line 348 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: ETHERNET_dma - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\_xps_tempmhsfilename.mhs line 425 
+INFO:coreutil - Hardware Evaluation license for component <axi_ethernet_soft_tri_mode> found. The generated design will cease to function in the programmed device after operating for some period of time. This allows you to evaluate the component in hardware. You are encouraged to license this component.
+For ordering information, please refer to the product page for this component on: www.xilinx.com
+INFO:coreutil - Hardware Evaluation license for component <axi_ethernet_soft_tri_mode> found. The generated design will cease to function in the programmed device after operating for some period of time. This allows you to evaluate the component in hardware. You are encouraged to license this component.
+For ordering information, please refer to the product page for this component on: www.xilinx.com
+Writing filter settings....
+Done writing filter settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.filters
+Done writing Tab View settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 13.2 Build EDK_O.61xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:4088 - IPNAME: axi_ethernet, INSTANCE: ETHERNET - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\_xps_tempmhsfilename.mhs line 348 
+WARNING:EDK:4088 - IPNAME: axi_dma, INSTANCE: ETHERNET_dma - Superseded core for architecture 'spartan6' - C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\_xps_tempmhsfilename.mhs line 425 
+INFO:coreutil - Hardware Evaluation license for component <axi_ethernet_soft_tri_mode> found. The generated design will cease to function in the programmed device after operating for some period of time. This allows you to evaluate the component in hardware. You are encouraged to license this component.
+For ordering information, please refer to the product page for this component on: www.xilinx.com
+
+********************************************************************************
+At Local date and time: Sun Feb 26 16:45:21 2012
+ make -f system.make bits started...
+xilperl C:/Xilinx/13.2/ISE_DS/EDK/data/fpga_impl/observe_par.pl -error no implementation/system.par
+Analyzing implementation/system.par
+"*********************************************"
+"Running Bitgen.."
+********************************************************************************
+WARNING: 1 constraint not met.
+********************************************************************************
+"*********************************************"
+cd implementation & bitgen -w -f bitgen.ut system & cd ..
+Release 13.2 - Bitgen O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/13.2/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
+<C:/Xilinx/13.2/ISE_DS/ISE/spartan6/data/spartan6.acd>
+Loading device for application Rf_Device from file '6slx45.nph' in environment
+C:\Xilinx\13.2\ISE_DS\ISE\;C:\Xilinx\13.2\ISE_DS\EDK.
+   "system" is an NCD, version 3.2, device xc6slx45, package fgg484, speed -2
+Opened constraints file system.pcf.
+
+Sun Feb 26 16:45:47 2012
+
+INFO:Bitgen:341 - This design is using one or more 9K Block RAMs (RAMB8BWER). 
+   9K Block RAM initialization data, both user defined and default, requires a
+   special bit stream format.  For more information, please reference Xilinx
+   Answer Record 39999.
+Running DRC.
+WARNING:PhysDesignRules:367 - The signal
+   <MCB_DDR3/MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_
+   calibration_top_inst/ZIO_IN> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <MCB_DDR3/MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_
+   calibration_top_inst/RZQ_IN> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM5_RAMA_D1_DPO> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM5_RAMB_D1_DPO> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM1_RAMB_D1_DPO> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM1_RAMC_D1_DPO> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_CNTRL_STR
+   EAM.I_MM2S_CNTRL_STREAM/GEN_SYNC_FIFO.I_CNTRL_FIFO/V6_S6_AND_LATER.I_SYNC_FIF
+   O_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm
+   /Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any load pins
+   in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM1_RAMA_D1_DPO> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET/ETHERNET/I_EMBEDDED_TOP/RCV_INTFCE_I/RX_AXISTREAM_IF_I/ELASTIC_FIFO
+   /BU3/U0/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM1_RAMA_D1_DPO> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM2_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_STS_STREA
+   M.I_S2MM_STS_STREAM/GEN_SYNC_FIFO.I_STSSTRM_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_
+   BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/M
+   ram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM1_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM10_RAMD_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH2_UPDATE_Q_IF.GEN_CH2_QUEUE.I_CH2_UPDT_DESC_QUEUE/I_UPDT_DATA_FIFO/V6_S6_AN
+   D_LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM9_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_STS_STREA
+   M.I_S2MM_STS_STREAM/GEN_SYNC_FIFO.I_STSSTRM_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_
+   BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/M
+   ram_RAM4_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM10_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM3_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_STS_STREA
+   M.I_S2MM_STS_STREAM/GEN_SYNC_FIFO.I_STSSTRM_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_
+   BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/M
+   ram_RAM2_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_STS_STREA
+   M.I_S2MM_STS_STREAM/GEN_SYNC_FIFO.I_STSSTRM_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_
+   BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/M
+   ram_RAM3_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM7_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM8_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM6_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM5_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_ICache.ICache_
+   I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM4_RAMD_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM9_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM8_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM7_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_STS_STREA
+   M.I_S2MM_STS_STREAM/GEN_SYNC_FIFO.I_STSSTRM_FIFO/V6_S6_AND_LATER.I_SYNC_FIFO_
+   BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/M
+   ram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM3_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM4_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM5_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_W
+   riteBack.DCache_wb_I1/Using_Victim_Cache.victim_cache_I1/Mram_RAM6_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_STS_FIFO/V6_S6_AND
+   _LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+   c_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_STS_FIFO/V6_S6_AND
+   _LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+   c_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_STS_FIFO/V6_S6_AND
+   _LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+   c_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_STS_FIFO/V6_S6_AND
+   _LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+   c_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <ETHERNET_dma/ETHERNET_dma/I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_
+   CH1_UPDATE_Q_IF.GEN_CH1_QUEUE.I_CH1_UPDT_DESC_QUEUE/I_UPDT_STS_FIFO/V6_S6_AND
+   _LATER.I_SYNC_FIFO_BRAM/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_syn
+   c_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 75 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+INFO:Security:54 - 'xc6slx45' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Creating bit map...
+Saving bit stream in "system.bit".
+Bitstream generation is complete.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.filters
+Done writing Tab View settings to:
+	C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi\hw\etc\system.gui
