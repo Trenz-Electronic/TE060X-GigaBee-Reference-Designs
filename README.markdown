@@ -1,7 +1,5 @@
-Reference projects for TE060X modules 
-================================================================================
-Requirements: 
---------------------------------------------------------------------------------
+# Reference projects for TE060X modules 
+## Requirements: 
 Xilinx ISE 13.2 
 Xilinx EDK 13.2
 Git client
@@ -24,8 +22,7 @@ git submodule update
 Open project in Xilinx EDK or ISE
 
 ## GigaBee_XC6LX-AXI 
---------------------------------------------------------------------------------
-'''BEST STARTING POINT FOR EDK BASED DESIGN'''
+**BEST STARTING POINT FOR EDK BASED DESIGN**
 * hardware: Trenz Electronic GigaBee XC6SLX100
 * reference design: Xilinx XAPP1026, derived from sp605_Axi (Gigabit & DMA), 
 	Microblaze clock 100MHz
@@ -44,7 +41,6 @@ Open project in Xilinx EDK or ISE
 	to meet timing!
 
 ## GigaBee_XC6LX-Blinkin 
---------------------------------------------------------------------------------
 * hardware: Trenz Electronic GigaBee XC6SLX
 * reference design: Clock and LED VHDL usage example
     good starting point for bistream generation options testing and SPI flash 
@@ -53,7 +49,6 @@ Open project in Xilinx EDK or ISE
 * development environment: Xilinx ISE PN v13.2
 
 ## GigaBee_UDP_Datalogger
---------------------------------------------------------------------------------
 * hardware: Trenz Electronic GigaBee XC6SLX45
 * development environment: Xilinx ISE XMP v13.1
 This project demonstrates how to use GigaBee board
@@ -63,16 +58,16 @@ of broadcast UDP ethernet packets transmitted to Gigabit
 Ethernet network (Gigabit only. Doesn't work for 100Mbps.).
 
 ## GigaBee_XC6SLX-MIG
---------------------------------------------------------------------------------
 * hardware: Trenz Electronic GigaBee XC6SLX
 * reference design: Modified Memory Interface Generator 3.61 project to fit 
 	GigaBee
 * development environment: Xilinx ISE PN v12.4
 
+- - - 
 Projects under active development - not recomended for new users
---------------------------------------------------------------------------------
+
 ## GigaBee_XC6LX-AXI_lite 
---------------------------------------------------------------------------------
+
 * hardware: Trenz Electronic GigaBee XC6SLX100
 * reference design: Xilinx XAPP1026, derived from sp601_Axi 
 	(10/100 EthernetLite), Microblaze clock 100MHz
