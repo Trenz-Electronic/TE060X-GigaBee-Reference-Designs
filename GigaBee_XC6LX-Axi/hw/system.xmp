@@ -22,7 +22,7 @@ SimModel: BEHAVIORAL
 ExternalMemSim: 0
 UcfFile: data/system.ucf
 EnableParTimingError: 0
-ShowLicenseDialog: 1
+ShowLicenseDialog: 0
 ICacheAddr: MCB_DDR3,C_S0_AXI_BASEADDR
 ICacheAddr: MCB_DDR3,C_S1_AXI_BASEADDR
 ICacheAddr: MCB_DDR3,C_S2_AXI_BASEADDR

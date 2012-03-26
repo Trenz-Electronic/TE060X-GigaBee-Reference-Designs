@@ -1,6 +1,6 @@
 =========================================================================
-Time: Sun Feb 26 5:58:50 PM FLE Standard Time 2012
-Running: run_batch_mode 141695616
+Time: Sat Mar 24 7:47:01 PM FLE Standard Time 2012
+Running: run_batch_mode 140067776
 {COLLECTING:  INSTANCE MCB_DDR3    }
 {COLLECTING:  C_INTERCONNECT_S0_AXI_MASTERS microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM OPTIONAL string none microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM}
 {COLLECTING:  C_INTERCONNECT_S0_AXI_IS_ACLK_ASYNC 0 OPTIONAL_UPDATE integer 0 }
@@ -562,6 +562,6 @@ Running: run_batch_mode 141695616
 {SET: CHECK C_NUM_DQ_PINS = 16 (BATCH:OPTIONAL_UPDATE:CHECK:MPD:MPDVAL)}
 RETURN: 0
 =========================================================================
-Time: Sun Feb 26 5:58:51 PM FLE Standard Time 2012
-Running: generate_corelevel_constraints 141695616
+Time: Sat Mar 24 7:47:02 PM FLE Standard Time 2012
+Running: generate_corelevel_constraints 140067776
 RETURN: 
