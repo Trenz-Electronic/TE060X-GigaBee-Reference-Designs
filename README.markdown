@@ -22,7 +22,8 @@ git submodule update
 Open project in Xilinx EDK or ISE
 
 ## GigaBee_XC6LX-AXI 
-**BEST STARTING POINT FOR EDK BASED DESIGN**
+**BEST STARTING POINT FOR EDK BASED DESIGN**  
+
 * hardware: Trenz Electronic GigaBee XC6SLX100
 * reference design: Xilinx XAPP1026, derived from sp605_Axi (Gigabit & DMA), 
 	Microblaze clock 100MHz
@@ -64,7 +65,7 @@ Ethernet network (Gigabit only. Doesn't work for 100Mbps.).
 * development environment: Xilinx ISE PN v12.4
 
 - - - 
-Projects under active development - not recomended for new users
+**Projects under active development - not recomended for new users**
 
 ## GigaBee_XC6LX-AXI_lite 
 
