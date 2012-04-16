@@ -56,20 +56,21 @@ Remarks:
 
 
 ## GigaBee_UDP_Datalogger
-* hardware: Trenz Electronic GigaBee XC6SLX45
-* development environment: Xilinx ISE XMP v13.1
-This project demonstrates how to use GigaBee board
-together with baseboard equipped by ethernet connector as
-a data logger with 16 digital inputs and output in form
-of broadcast UDP ethernet packets transmitted to Gigabit
-Ethernet network (Gigabit only. Doesn't work for 100Mbps.).
+Hardware: Trenz Electronic GigaBee XC6SLX45
+
+development environment: Xilinx ISE XMP v13.1
+
+This project demonstrates how to use the GigaBee module with its baseboard (equipped with an ethernet connector) as a data logger with 16 digital inputs and 16 digital outputs. Broadcast UDP packets are transmitted to a Gigabit Ethernet network.
+
+Gigabit Ethernet only design, it does not work with 100 megabit Ethernet.
 
 
 ## GigaBee_XC6SLX-MIG
-* hardware: Trenz Electronic GigaBee XC6SLX
-* reference design: Modified Memory Interface Generator 3.61 project to fit 
-	GigaBee
-* development environment: Xilinx ISE PN v12.4
+Hardware: Trenz Electronic TE0600) GigaBee XC6SLX
+
+Reference design: Memory Interface Generator 3.61 project ported to TE0600 (GigaBee)
+
+Development environment: Xilinx ISE PN v12.4
 
 - - - 
 **Projects under active development - not recomended for new users**
@@ -77,13 +78,14 @@ Ethernet network (Gigabit only. Doesn't work for 100Mbps.).
 
 ## GigaBee_XC6LX-AXI_lite 
 
-* hardware: Trenz Electronic GigaBee XC6SLX100
-* reference design: Xilinx XAPP1026, derived from sp601_Axi 
-	(10/100 EthernetLite), Microblaze clock 100MHz
-	Software from XAPP1026 is fully compatible with this HW design
-* read documentation at 
-	http://www.xilinx.com/support/documentation/application_notes/xapp1026.pdf
-* development environment: Xilinx ISE XMP v13.1
-* Does not work!!!Problems with software 
-	(we suspect Ethernet PHY address is wrong)!!
-	
+Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX100
+
+Development environment: Xilinx ISE XMP v13.1
+
+Software from Xilinx XAPP1026 "LightWeight IP (lwIP) Application Examples"
+
+www.xilinx.com/support/documentation/application_notes/xapp1026.pdf
+
+is fully compatible with this HW design, derived from SP601_AXI reference design (10/100 EthernetLite, 100 MHz Microblaze).
+
+Does not work!!!Problems with software (we suspect Ethernet PHY address is wrong)!!
