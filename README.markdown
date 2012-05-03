@@ -1,11 +1,10 @@
 # Reference projects for TE060X modules 
 ## Requirements: 
-Xilinx ISE 13.2 
-Xilinx EDK 13.2
-Git client
+* Xilinx ISE 13.2 
+* Xilinx EDK 13.2
+* Git client
 
-To get projects:
-
+## Get projects
 * Without Git
 Go to the download page 
 https://github.com/Trenz-Electronic/TE060X-GigaBee-Reference-Designs/downloads
