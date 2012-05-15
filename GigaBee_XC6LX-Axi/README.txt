@@ -22,3 +22,4 @@ Reference AXI project for GigaBee TE0600 boards.
 
 Project is under MIT license. All contributions should mit MIT license.
 --------------------------------------------------------------------------------
+To build project use instructions from Xilinx xapp1026.

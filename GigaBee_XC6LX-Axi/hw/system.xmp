@@ -5,7 +5,7 @@ IntStyle: default
 Flow: ise
 MHS File: system.mhs
 Architecture: spartan6
-Device: xc6slx100
+Device: xc6slx45
 Package: fgg484
 SpeedGrade: -2
 UserCmd1: 

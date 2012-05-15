@@ -21,10 +21,10 @@ ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
 
     ADDRESS_SPACE microblaze_0_bram_block_combined RAMB16 [0x00000000:0x00001FFF]
         BUS_BLOCK
-            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0 [31:24] INPUT = microblaze_0_bram_block_combined_0.mem PLACED = X3Y46;
-            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1 [23:16] INPUT = microblaze_0_bram_block_combined_1.mem PLACED = X3Y48;
-            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2 [15:8] INPUT = microblaze_0_bram_block_combined_2.mem PLACED = X5Y48;
-            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3 [7:0] INPUT = microblaze_0_bram_block_combined_3.mem PLACED = X4Y50;
+            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0 [31:24] INPUT = microblaze_0_bram_block_combined_0.mem PLACED = X2Y24;
+            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1 [23:16] INPUT = microblaze_0_bram_block_combined_1.mem PLACED = X1Y24;
+            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2 [15:8] INPUT = microblaze_0_bram_block_combined_2.mem PLACED = X3Y24;
+            microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3 [7:0] INPUT = microblaze_0_bram_block_combined_3.mem PLACED = X2Y26;
         END_BUS_BLOCK;
     END_ADDRESS_SPACE;
 
