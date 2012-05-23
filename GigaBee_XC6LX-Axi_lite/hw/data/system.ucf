@@ -50,7 +50,7 @@ NET Ethernet_Lite_TXD[0] LOC = AA18;
 NET Ethernet_Lite_TXD[1] LOC = AB14;
 NET Ethernet_Lite_TXD[2] LOC = AA16;
 NET Ethernet_Lite_TXD[3] LOC = W14;
-NET Ethernet_Lite_TX_CLK LOC = R11;
+NET Ethernet_Lite_TX_CLK LOC = W12;
 NET Ethernet_Lite_TX_EN LOC = AB16;
 NET LEDs_4Bits_TRI_O[0] LOC = T20  |  IOSTANDARD = LVCMOS33; #on board
 NET LEDs_4Bits_TRI_O[1] LOC = H8  |  IOSTANDARD = LVCMOS15;
