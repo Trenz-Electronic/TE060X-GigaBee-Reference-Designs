@@ -20,6 +20,10 @@ git submodule init
 git submodule update
 Open project in Xilinx EDK or ISE
 
+## Generic
+
+In this folder you can find complete UCF file for module and baseboard.
+
 
 ## GigaBee_XC6LX-AXI 
 **﻿Recommended starting point for EDK-based designs**  
