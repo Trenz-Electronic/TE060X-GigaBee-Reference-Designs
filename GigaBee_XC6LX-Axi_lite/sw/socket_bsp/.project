@@ -3,7 +3,7 @@
 	<name>socket_bsp</name>
 	<comment></comment>
 	<projects>
-		<project>hw_platform_0</project>
+		<project>hw_hw_platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

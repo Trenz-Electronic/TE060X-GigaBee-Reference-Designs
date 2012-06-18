@@ -1,3 +1,3 @@
 PROCESSOR=microblaze_0
-REPOSITORIES=-lp /proj/epdsw/anirudha/sp601_Axi/SDK/SDK_Export
-HWSPEC=../hw_platform_0/system.xml
+REPOSITORIES=-lp ../../SDK_Export
+HWSPEC=../hw_hw_platform/system.xml

@@ -22,9 +22,9 @@
 #FPGA size specific constraints
 #PLL placement
 #necesarry for LX100 and LX150 devices
-INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
 #necesarry for LX45 devices
-#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
 
 #
 # pin constraints
@@ -67,20 +67,20 @@ NET RS232_Uart_1_sout LOC = A17  |  IOSTANDARD = LVCMOS33;
 # additional constraints
 #
 #fix according to ds787_axi_ethernetlite.pdf page 33
-NET "phy_rx_clk" PERIOD = 40 ns HIGH 14 ns;
-NET "phy_tx_clk" PERIOD = 40 ns HIGH 14 ns;
-OFFSET = OUT 10 ns AFTER "phy_tx_clk" ;
-OFFSET = IN 6 ns BEFORE "phy_rx_clk" ;
-NET "phy_rx_data<3>" IOBDELAY = NONE;
-NET "phy_rx_data<2>" IOBDELAY = NONE;
-NET "phy_rx_data<1>" IOBDELAY = NONE;
-NET "phy_rx_data<0>" IOBDELAY = NONE;
-NET "phy_dv" IOBDELAY = NONE;
-NET "phy_rx_er" IOBDELAY = NONE;
-NET "phy_crs" IOBDELAY = NONE;
-NET "phy_col" IOBDELAY = NONE;
-NET "phy_tx_clk" MAXSKEW = 6.0 ns;
-NET "phy_rx_clk" MAXSKEW = 6.0 ns;
+NET "Ethernet_Lite_RX_CLK" PERIOD = 40 ns HIGH 14 ns;
+NET "Ethernet_Lite_TX_CLK" PERIOD = 40 ns HIGH 14 ns;
+OFFSET = OUT 10 ns AFTER "Ethernet_Lite_TX_CLK";
+OFFSET = IN 6 ns BEFORE "Ethernet_Lite_RX_CLK";
+NET "Ethernet_Lite_RXD[3]" IOBDELAY = NONE;
+NET "Ethernet_Lite_RXD[2]" IOBDELAY = NONE;
+NET "Ethernet_Lite_RXD[1]" IOBDELAY = NONE;
+NET "Ethernet_Lite_RXD[0]" IOBDELAY = NONE;
+NET "Ethernet_Lite_RX_DV" IOBDELAY = NONE;
+NET "Ethernet_Lite_RX_ER" IOBDELAY = NONE;
+NET "Ethernet_Lite_CRS" IOBDELAY = NONE;
+NET "Ethernet_Lite_COL" IOBDELAY = NONE;
+NET "Ethernet_Lite_TX_CLK" MAXSKEW = 6.0 ns;
+NET "Ethernet_Lite_RX_CLK" MAXSKEW = 6.0 ns;
 
 NET "CLK" TNM_NET = sys_clk_pin;
 TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 125000 kHz;
