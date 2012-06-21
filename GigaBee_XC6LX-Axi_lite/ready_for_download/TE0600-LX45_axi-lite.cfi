@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.61xd
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.61xd
+DATE            05/29/2012 - 20:44
+SOURCE          C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Axi_lite\ready_for_download\TE0600-LX45_axi-lite.mcs
+DEVICE          16384K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0xE96857BA
+START_ADDRESS   0x00000000 END_ADDRESS 0x0016A673 DIRECTION_UP   "C:/Projects/Trenz/repos/TE060X-GigaBee-Reference-Designs/GigaBee_XC6LX-Axi_lite/hw/implementation/download_cclktemp.bit" 6slx45fgg484
