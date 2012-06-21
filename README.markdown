@@ -83,12 +83,12 @@ Development environment: Xilinx ISE PN v12.4
 
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX100
 
-Development environment: Xilinx ISE XMP v13.1
+Development environment: Xilinx ISE XMP v13.2
 
 Software from Xilinx XAPP1026 "LightWeight IP (lwIP) Application Examples"
 
 www.xilinx.com/support/documentation/application_notes/xapp1026.pdf
 
 is fully compatible with this HW design, derived from SP601_AXI reference design (10/100 EthernetLite, 100 MHz Microblaze).
-
-Does not work!!!Problems with software (we suspect Ethernet PHY address is wrong)!!
+This project work only with Ethernet 10/100 connection during to axi_ethernetlite limitations. If you have Gigabit NIC,
+you should disable Gigabit ("Auto disable Gigabit" option in "Advansed" configuration) to make it work.

@@ -17,7 +17,6 @@ copy /y implementation\download.bit download_lx45.bit
 @rem make -f system.make hwclean
 
 
-@rem Generate FWU for LX45
 @copy download_lx45.bit fpga.bit
 @impact -batch etc\bit2mcs.cmd
 @move fpga.mcs TE0600-LX45.mcs

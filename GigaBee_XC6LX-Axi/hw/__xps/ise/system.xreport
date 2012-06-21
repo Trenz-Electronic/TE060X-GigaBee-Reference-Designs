@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-06-09T16:30:39</DateModified>
+  <DateModified>2012-06-19T21:49:56</DateModified>
   <ModuleName>system</ModuleName>
-  <SummaryTimeStamp>2012-06-09T16:30:38</SummaryTimeStamp>
+  <SummaryTimeStamp>2012-06-19T21:49:56</SummaryTimeStamp>
   <SavedFilePath>C:/Projects/Trenz/repos/TE060X-GigaBee-Reference-Designs/GigaBee_XC6LX-Axi/hw/__xps/ise/system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>C:/Projects/Trenz/repos/TE060X-GigaBee-Reference-Designs/GigaBee_XC6LX-Axi/hw/__xps/ise</SavedFilterFilePath>

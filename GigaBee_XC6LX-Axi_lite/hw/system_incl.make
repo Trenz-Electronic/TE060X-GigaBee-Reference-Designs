@@ -45,17 +45,17 @@ BRAMINIT_ELF_IMP_FILE_ARGS = -pe microblaze_0 $(MICROBLAZE_0_BOOTLOOP)
 BRAMINIT_ELF_SIM_FILES = $(MICROBLAZE_0_BOOTLOOP)
 BRAMINIT_ELF_SIM_FILE_ARGS = -pe microblaze_0 $(MICROBLAZE_0_BOOTLOOP)
 
-SIM_CMD = vsim
+SIM_CMD = isim_system
 
-BEHAVIORAL_SIM_SCRIPT = simulation/behavioral/$(SYSTEM)_setup.do
+BEHAVIORAL_SIM_SCRIPT = simulation/behavioral/$(SYSTEM)_setup.tcl
 
-STRUCTURAL_SIM_SCRIPT = simulation/structural/$(SYSTEM)_setup.do
+STRUCTURAL_SIM_SCRIPT = simulation/structural/$(SYSTEM)_setup.tcl
 
-TIMING_SIM_SCRIPT = simulation/timing/$(SYSTEM)_setup.do
+TIMING_SIM_SCRIPT = simulation/timing/$(SYSTEM)_setup.tcl
 
 DEFAULT_SIM_SCRIPT = $(BEHAVIORAL_SIM_SCRIPT)
 
-SIMGEN_OPTIONS = -p $(DEVICE) -lang $(LANGUAGE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s mgm -X C:/Projects/Trenz/repos/TE060X-GigaBee-Reference-Designs/GigaBee_XC6LX-Axi_lite/hw/
+SIMGEN_OPTIONS = -p $(DEVICE) -lang $(LANGUAGE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s isim
 
 
 CORE_STATE_DEVELOPMENT_FILES = 
