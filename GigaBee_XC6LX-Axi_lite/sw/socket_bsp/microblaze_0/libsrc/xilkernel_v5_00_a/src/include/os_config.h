@@ -24,7 +24,7 @@
 
 #define CONFIG_PTHREAD_SUPPORT true
 
-#define MAX_PTHREADS 10
+#define MAX_PTHREADS 8
 
 #define PTHREAD_STACK_SIZE 32768
 
@@ -42,11 +42,11 @@
 
 #define SYSTMR_BASEADDR 0x41c00000
 
-#define SYSTMR_INTERVAL 1000000
+#define SYSTMR_INTERVAL 50000
 
-#define SYSTMR_CLK_FREQ 100000000
+#define SYSTMR_CLK_FREQ 50000000
 
-#define SYSTMR_CLK_FREQ_KHZ 100000
+#define SYSTMR_CLK_FREQ_KHZ 50000
 
 #define CONFIG_INTC true
 
@@ -58,13 +58,13 @@
 
 #define CONFIG_SCHED true
 
-#define SCHED_TYPE SCHED_RR
+#define SCHED_TYPE SCHED_PRIO
 
 #define N_PRIO 32
 
-#define CONFIG_RRSCHED true
+#define CONFIG_PRIOSCHED true
 
-#define MAX_READYQ 10
+#define MAX_READYQ 8
 
 #define CONFIG_SEMA true
 
