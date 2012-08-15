@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
- 136636	   1512	 886108	1024256	  fa100	raw_apps.elf
+ 136544	   1512	 886104	1024160	  fa0a0	raw_apps.elf

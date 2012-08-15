@@ -25,6 +25,8 @@
 #include "platform.h"
 #include "platform_config.h"
 
+#include "lwip/init.h"
+
 void print_headers();
 int start_applications();
 int transfer_data();

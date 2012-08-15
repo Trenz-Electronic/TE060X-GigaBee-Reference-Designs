@@ -20,6 +20,11 @@
 #include "lwip/ip_addr.h"
 
 #include "config_apps.h"
+#include "echo.h"
+#include "rxperf.h"
+#include "txperf.h"
+#include "tftpserver.h"
+#include "webserver.h"
 
 void print_headers()
 {
@@ -62,6 +67,8 @@ start_applications()
 
     if (INCLUDE_WEB_SERVER)
         start_web_application();
+
+    return 0;
 }
 
 int
@@ -81,4 +88,6 @@ transfer_data()
 
     if (INCLUDE_WEB_SERVER)
         transfer_web_data();
+
+    return 0;
 }

@@ -2,8 +2,9 @@ Release 13.2 - libgen Xilinx EDK 13.2 Build EDK_O.61xd
  (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Command Line: libgen -hw ../hw_hw_platform/system.xml -lp ../../SDK_Export -pe
-microblaze_0 -log libgen.log system.mss 
+Command Line: libgen -hw ../hw_hw_platform/system.xml -lp
+C:/TEMP/GigaBee_XC6LX-Axi_lite/Repository -pe microblaze_0 -log libgen.log
+system.mss 
 
 WARNING:EDK - INFO:Security:56 - Part 'xc6slx45' is not a WebPack part.
    WARNING:Security:42 - Your software subscription period has lapsed. Your

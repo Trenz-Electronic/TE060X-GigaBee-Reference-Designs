@@ -20,6 +20,7 @@
 
 #include "platform.h"
 #include "platform_config.h"
+#include "platform_fs.h"
 
 #include "xenv_standalone.h"
 #include "xparameters.h"
@@ -58,8 +59,8 @@ timer_callback()
 void
 xadapter_timer_handler(void *p)
 {
-	unsigned *timer_base = (unsigned *)PLATFORM_TIMER_BASEADDR;
-	unsigned tcsr = 0;
+	//unsigned *timer_base = (unsigned *)PLATFORM_TIMER_BASEADDR;
+	//unsigned tcsr = 0;
 
 	timer_callback();
 

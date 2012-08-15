@@ -41,6 +41,9 @@
 #include "lwip/tcp.h"
 
 #include "webserver.h"
+#include "mfs_config.h"
+#include "platform_gpio.h"
+
 
 /* static variables controlling debug printf's in this file */
 static int g_webserver_debug = 0;
@@ -110,9 +113,9 @@ http_recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)
 			a = NULL;
 		}
 		tcp_close(tpcb);
-		return;
+		return ERR_OK;
 	} else if (tpcb->state > 8) {
-		return;
+		return ERR_OK;
 	}
 
 	/* acknowledge that we've read the payload */

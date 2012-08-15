@@ -2,7 +2,7 @@ platform.d platform.o: ../platform.c \
   ../../raw_bsp/microblaze_0/include/arch/cc.h \
   ../../raw_bsp/microblaze_0/include/lwipopts.h ../platform.h \
   ../platform_config.h ../../raw_bsp/microblaze_0/include/xparameters.h \
-  ../../raw_bsp/microblaze_0/include/xenv_standalone.h \
+  ../platform_fs.h ../../raw_bsp/microblaze_0/include/xenv_standalone.h \
   ../../raw_bsp/microblaze_0/include/mb_interface.h \
   ../../raw_bsp/microblaze_0/include/xbasic_types.h \
   ../../raw_bsp/microblaze_0/include/xparameters.h \
@@ -41,6 +41,8 @@ platform.d platform.o: ../platform.c \
 ../platform_config.h:
 
 ../../raw_bsp/microblaze_0/include/xparameters.h:
+
+../platform_fs.h:
 
 ../../raw_bsp/microblaze_0/include/xenv_standalone.h:
 

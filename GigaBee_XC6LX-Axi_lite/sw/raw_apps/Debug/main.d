@@ -15,7 +15,7 @@ main.d main.o: ../main.c ../../raw_bsp/microblaze_0/include/xparameters.h \
   ../../raw_bsp/microblaze_0/include/lwip/ip.h \
   ../../raw_bsp/microblaze_0/include/lwip/def.h \
   ../../raw_bsp/microblaze_0/include/netif/xtopology.h ../platform.h \
-  ../platform_config.h
+  ../platform_config.h ../../raw_bsp/microblaze_0/include/lwip/init.h
 
 ../../raw_bsp/microblaze_0/include/xparameters.h:
 
@@ -54,3 +54,5 @@ main.d main.o: ../main.c ../../raw_bsp/microblaze_0/include/xparameters.h \
 ../platform.h:
 
 ../platform_config.h:
+
+../../raw_bsp/microblaze_0/include/lwip/init.h:

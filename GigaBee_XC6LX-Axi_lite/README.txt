@@ -38,3 +38,51 @@ is fully compatible with this HW design, derived from SP601_AXI reference design
 
 This project work only with Ethernet 10/100 connection during to axi_ethernetlite limitations. If you have Gigabit NIC,
 you should disable Gigabit ("Auto disable Gigabit" option in "Advansed" configuration) to make it work.
+
+Build:
+- convert project for your module:
+  run hw\set_lx45_project.bat for module with XC6SLX45
+  run hw\set_lx100_project.bat for module with XC6SLX100
+  run hw\set_lx150_project.bat for module with XC6SLX150
+- open hw\system.xmp using Xilinx EDK 32.2
+  In Xilinx EDK
+- run "Hardware -> Generate Bitstream"
+- run "Project -> Export Hardware Design to SDK..."
+- select "Export & Launch SDK"
+- specify place for new workspace and press "OK"
+  In Xilinx SDK
+- select "Xilinx Tools -> Repositories" 
+- press "New" near "Local Repositories" area
+- navigate to "Repository" in project directory 
+- Press "Rescan Repositories" and then "OK"
+- right click on SDK "Project explorer" panel and select "Import..."
+- select "General -> Existing Project into Workspace"
+- click "Browse" button near "Select root directory" navigate to project sw directory
+- select "raw_apps" and "raw_bsp" projects and check "Copy projects into workspace" and click "Finish"
+- run "Project -> Build all"
+Test:
+- connect module to PC using Xilinx JTAG cable and Ethernet cable
+- power on module
+- run "Control Panel" and click to "View network status and tasks"
+- click  "Local area connection"
+- go to IPv4 settings and set IPv4 IP address to 192.168.1.2 netmask 255.255.255.0
+- apply new IPs
+- if you have Gigabit NIC you should put it to 10/100 mode
+  At "Local area connection status" press "Properties" then "Configure"
+  select "Advansed"
+  set "Auto disable Gigabit" to "Re-Link. Battery or AC"
+- run "Xilnx Tools -> Program FPGA"
+- run "Xilinx Tools -> XMD Console"
+  In XMD Console tab
+* connect mdm -uart
+* terminal -jatg_uart_server 4321
+* connect terminal program to 127.0.0.1:4321 to see program output
+- cd ../ready_for_download
+- connect mb mdm
+- dow -data image.mfs 0xC5000000
+  In SDK window
+- select "raw_apps" on "Project Explorer" tab, right click and select "Run As -> Launch on Hardware"
+- wait while program boot (around 30 seconds)
+- run browser and go to 192.168.1.10 to see web server aplication output
+
+* steps is iptional

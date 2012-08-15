@@ -27,7 +27,7 @@
 
 void print_http_request(char *buf, int n)
 {
-	int i;
+	//int i;
 
 	printf("%s\r\n", buf);
 }
@@ -82,7 +82,7 @@ extract_file_name(char *filename, char *req, int rlen, int maxlen)
 		*fend = 0;
 		strcpy(filename, "404.html");
 		printf("Request filename is too long, length = %d, file = %s (truncated), max = %d\r\n",
-				(fend - fstart), fstart, maxlen);
+				(unsigned int)(fend - fstart), fstart, maxlen);
 		return;
 	}
 

@@ -34,7 +34,7 @@ static char send_buf[SEND_BUFSIZE];
 int
 transfer_utxperf_data()
 {
-	int copy = 1;
+	//int copy = 1;
 	err_t err;
 	struct udp_pcb *pcb = connected_pcb;
 	static int id;

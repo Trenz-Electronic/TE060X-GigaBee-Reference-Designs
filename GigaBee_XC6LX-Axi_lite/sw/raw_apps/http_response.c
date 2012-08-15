@@ -22,6 +22,8 @@
 #include "lwip/inet.h"
 
 #include "webserver.h"
+#include "web_utils.h"
+#include "platform_gpio.h"
 
 char *notfound_header =
 	"<html> \
@@ -73,7 +75,7 @@ int do_404(struct tcp_pcb *pcb, char *req, int rlen)
 int do_http_post(struct tcp_pcb *pcb, char *req, int rlen)
 {
 	int BUFSIZE = 1024;
-	unsigned char buf[BUFSIZE];
+	char buf[BUFSIZE];
 	int len, n;
         char *p;
 
@@ -88,7 +90,7 @@ int do_http_post(struct tcp_pcb *pcb, char *req, int rlen)
 	} else if (is_cmd_switch(req)) {
                 unsigned s = get_switch_state();
                 int n_switches = 8;
-		char *json_response = "{\"status\":\"10101011\"}";
+		//char *json_response = "{\"status\":\"10101011\"}";
 
                 xil_printf("http POST: switch state: %x\r\n", s);
 		len = generate_http_header(buf, "js", n_switches);
@@ -122,7 +124,7 @@ int do_http_get(struct tcp_pcb *pcb, char *req, int rlen)
 {
 	int BUFSIZE = 1400;
 	char filename[MAX_FILENAME];
-	unsigned char buf[BUFSIZE];
+	char buf[BUFSIZE];
 	int fsize, hlen, n;
 	int fd;
 	char *fext;
@@ -163,7 +165,7 @@ int do_http_get(struct tcp_pcb *pcb, char *req, int rlen)
 
 	/* now write the file */
 	while (fsize) {
-		int w, sndbuf;
+		int sndbuf;
 		sndbuf = tcp_sndbuf(pcb);
 
 		if (sndbuf < BUFSIZE) {
@@ -173,7 +175,7 @@ int do_http_get(struct tcp_pcb *pcb, char *req, int rlen)
 			http_arg *a = (http_arg *)pcb->callback_arg;
 			a->fd = fd;
 			a->fsize = fsize;
-			return;
+			return 0;
 		}
 
 		n = mfs_file_read(fd, buf, BUFSIZE);

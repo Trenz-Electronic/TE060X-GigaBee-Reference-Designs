@@ -71,4 +71,11 @@ typedef struct {
 	unsigned long long last_time;
 } tftp_connection_args;
 
+void print_tftp_app_header();
+int start_tftp_application();
+void transfer_tftp_data();
+
+
+
+
 #endif

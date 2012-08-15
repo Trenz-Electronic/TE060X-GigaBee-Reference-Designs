@@ -18,7 +18,8 @@ http_response.d http_response.o: ../http_response.c \
   ../../raw_bsp/microblaze_0/include/lwip/def.h \
   ../../raw_bsp/microblaze_0/include/lwip/icmp.h \
   ../../raw_bsp/microblaze_0/include/lwip/netif.h \
-  ../../raw_bsp/microblaze_0/include/lwip/inet.h
+  ../../raw_bsp/microblaze_0/include/lwip/inet.h ../web_utils.h \
+  ../platform_gpio.h
 
 ../../raw_bsp/microblaze_0/include/mfs_config.h:
 
@@ -61,3 +62,7 @@ http_response.d http_response.o: ../http_response.c \
 ../../raw_bsp/microblaze_0/include/lwip/netif.h:
 
 ../../raw_bsp/microblaze_0/include/lwip/inet.h:
+
+../web_utils.h:
+
+../platform_gpio.h:

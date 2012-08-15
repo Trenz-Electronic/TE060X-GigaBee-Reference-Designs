@@ -36,4 +36,5 @@ void *prot_mem_free(void *a)
 	SYS_ARCH_PROTECT(lev);
 	mem_free(a);
 	SYS_ARCH_UNPROTECT(lev);
+	return 0;	// It's wrong but it remove warning
 }

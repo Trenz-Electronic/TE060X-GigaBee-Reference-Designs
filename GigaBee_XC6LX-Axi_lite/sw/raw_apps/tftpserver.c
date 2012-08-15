@@ -54,7 +54,7 @@ char *tftp_errorcode_string[] = {
 };
 
 static unsigned tftp_port = 69;
-static tftp_server_started = 0;
+static int tftp_server_started = 0;
 
 err_t
 tftp_send_message(struct udp_pcb *pcb, struct ip_addr *to_ip, int to_port, char *buf, int buflen)
@@ -188,7 +188,7 @@ rrq_recv_callback(void *_args, struct udp_pcb *upcb,
 int
 tftp_process_read(struct udp_pcb *pcb, struct ip_addr *to, int to_port, char *fname)
 {
-	int fd, n, block;
+	int fd;
 	tftp_connection_args *args;
 
 	/* first make sure the file exists and we can read the file */
@@ -273,7 +273,7 @@ wrq_recv_callback(void *_args, struct udp_pcb *upcb,
 int
 tftp_process_write(struct udp_pcb *pcb, struct ip_addr *to, int to_port, char *fname)
 {
-	int fd, n, block;
+	int fd;
 	tftp_connection_args *args;
 
 	/* we do not allow overwriting files */
@@ -403,6 +403,7 @@ start_tftp_application()
 	udp_recv(pcb, tftp_recv_callback, NULL);
 
         tftp_server_started = 1;
+   return 0;
 }
 
 void

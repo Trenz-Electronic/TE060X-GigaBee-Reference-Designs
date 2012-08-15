@@ -47,5 +47,11 @@ typedef struct {
 
 http_arg *palloc_arg();
 void pfree_arg(http_arg *);
+void print_web_app_header();
+int start_web_application();
+int transfer_web_data();
+
+
+
 
 #endif
