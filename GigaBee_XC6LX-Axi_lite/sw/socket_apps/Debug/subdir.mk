@@ -65,7 +65,7 @@ C_DEPS += \
 %.o: ../%.c
 	@echo Building file: $<
 	@echo Invoking: MicroBlaze gcc compiler
-	mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -D __XMK__ -I../../socket_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.10.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -D __XMK__ -I../../socket_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.20.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo Finished building: $<
 	@echo ' '
 

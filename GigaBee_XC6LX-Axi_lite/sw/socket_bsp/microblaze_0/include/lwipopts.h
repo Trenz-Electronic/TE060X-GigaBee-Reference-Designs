@@ -56,6 +56,6 @@
 #define LWIP_DHCP 0
 #define DHCP_DOES_ARP_CHECK false
 
-#define CONFIG_LINKSPEED_AUTODETECT 1
+#define CONFIG_LINKSPEED100 1
 
 #endif

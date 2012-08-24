@@ -13,7 +13,7 @@ VER1='1.0'
 
 # Project 2 description
 NAME2='GigaBee_XC6LX-Axi_lite'
-TOOL2='EDK-13.1'
+TOOL2='EDK-13.2'
 VER2='1.0'
 
 # Project 3 description
