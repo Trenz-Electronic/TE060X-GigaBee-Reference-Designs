@@ -61,6 +61,25 @@
  PORT ETHERNET_RX_CLK = ETHERNET_RX_CLK, DIR = I
  PORT ETHERNET_RX_DV = ETHERNET_RX_DV, DIR = I
  PORT ETHERNET_PHY_RST_N = ETHERNET_PHY_RST_N, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_addr = axi_s6_ddrx_0_mcbx_dram_addr, DIR = O, VEC = [12:0]
+ PORT axi_s6_ddrx_0_mcbx_dram_ba = axi_s6_ddrx_0_mcbx_dram_ba, DIR = O, VEC = [2:0]
+ PORT axi_s6_ddrx_0_mcbx_dram_ras_n = axi_s6_ddrx_0_mcbx_dram_ras_n, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_cas_n = axi_s6_ddrx_0_mcbx_dram_cas_n, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_we_n = axi_s6_ddrx_0_mcbx_dram_we_n, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_cke = axi_s6_ddrx_0_mcbx_dram_cke, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_clk = axi_s6_ddrx_0_mcbx_dram_clk, DIR = O, SIGIS = CLK
+ PORT axi_s6_ddrx_0_mcbx_dram_clk_n = axi_s6_ddrx_0_mcbx_dram_clk_n, DIR = O, SIGIS = CLK
+ PORT axi_s6_ddrx_0_mcbx_dram_dq = axi_s6_ddrx_0_mcbx_dram_dq, DIR = IO, VEC = [15:0]
+ PORT axi_s6_ddrx_0_mcbx_dram_dqs = axi_s6_ddrx_0_mcbx_dram_dqs, DIR = IO
+ PORT axi_s6_ddrx_0_mcbx_dram_dqs_n = axi_s6_ddrx_0_mcbx_dram_dqs_n, DIR = IO
+ PORT axi_s6_ddrx_0_mcbx_dram_udqs = axi_s6_ddrx_0_mcbx_dram_udqs, DIR = IO
+ PORT axi_s6_ddrx_0_mcbx_dram_udqs_n = axi_s6_ddrx_0_mcbx_dram_udqs_n, DIR = IO
+ PORT axi_s6_ddrx_0_mcbx_dram_udm = axi_s6_ddrx_0_mcbx_dram_udm, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_ldm = axi_s6_ddrx_0_mcbx_dram_ldm, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_odt = axi_s6_ddrx_0_mcbx_dram_odt, DIR = O
+ PORT axi_s6_ddrx_0_mcbx_dram_ddr3_rst = axi_s6_ddrx_0_mcbx_dram_ddr3_rst, DIR = O
+ PORT axi_s6_ddrx_0_rzq = axi_s6_ddrx_0_rzq, DIR = IO
+ PORT axi_s6_ddrx_0_zio = axi_s6_ddrx_0_zio, DIR = IO
 
 
 BEGIN axi_interconnect
@@ -320,12 +339,14 @@ BEGIN axi_gpio
 END
 
 BEGIN axi_s6_ddrx
- PARAMETER INSTANCE = MCB_DDR3
+ PARAMETER INSTANCE = MCB3_DDR3
  PARAMETER HW_VER = 1.03.a
+ PARAMETER C_MEM_PARTNO = MT41J64M16XX-187E
+ PARAMETER C_MCB_PERFORMANCE = EXTENDED
+ PARAMETER C_MCB_LOC = MEMC3
+ PARAMETER C_MEM_TYPE = DDR3
  PARAMETER C_MCB_RZQ_LOC = K7
  PARAMETER C_MCB_ZIO_LOC = Y2
- PARAMETER C_MEM_TYPE = DDR3
- PARAMETER C_MEM_PARTNO = MT41J64M16XX-187E
  PARAMETER C_MEM_BANKADDR_WIDTH = 3
  PARAMETER C_MEM_NUM_COL_BITS = 10
  PARAMETER C_SKIP_IN_TERM_CAL = 0
@@ -358,6 +379,53 @@ BEGIN axi_s6_ddrx
  PORT mcbx_dram_udqs_n = mcbx_dram_udqs_n
  PORT rzq = rzq
  PORT zio = zio
+ PORT s0_axi_aclk = clk_100_0000MHzPLL0
+ PORT ui_clk = clk_100_0000MHzPLL0
+ PORT sysclk_2x = clk_600_0000MHzPLL0_nobuf
+ PORT sysclk_2x_180 = clk_600_0000MHz180PLL0_nobuf
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT PLL_LOCK = pll0_locked
+END
+
+BEGIN axi_s6_ddrx
+ PARAMETER INSTANCE = MCB1_DDR3
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_MEM_PARTNO = MT41J64M16XX-187E
+ PARAMETER C_MCB_PERFORMANCE = EXTENDED
+ PARAMETER C_MCB_LOC = MEMC1
+ PARAMETER C_MCB_RZQ_LOC = M19
+ PARAMETER C_MCB_ZIO_LOC = C19
+ PARAMETER C_MEM_TYPE = DDR3
+ PARAMETER C_S0_AXI_STRICT_COHERENCY = 0
+ PARAMETER C_S0_AXI_ENABLE = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_MASTERS = microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM
+ PARAMETER C_INTERCONNECT_S0_AXI_AW_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_AR_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_W_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_R_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_B_REGISTER = 1
+ PARAMETER C_S0_AXI_BASEADDR = 0xd0000000
+ PARAMETER C_S0_AXI_HIGHADDR = 0xd7ffffff
+ BUS_INTERFACE S0_AXI = axi4_0
+ PORT mcbx_dram_addr = axi_s6_ddrx_0_mcbx_dram_addr
+ PORT mcbx_dram_ba = axi_s6_ddrx_0_mcbx_dram_ba
+ PORT mcbx_dram_ras_n = axi_s6_ddrx_0_mcbx_dram_ras_n
+ PORT mcbx_dram_cas_n = axi_s6_ddrx_0_mcbx_dram_cas_n
+ PORT mcbx_dram_we_n = axi_s6_ddrx_0_mcbx_dram_we_n
+ PORT mcbx_dram_cke = axi_s6_ddrx_0_mcbx_dram_cke
+ PORT mcbx_dram_clk = axi_s6_ddrx_0_mcbx_dram_clk
+ PORT mcbx_dram_clk_n = axi_s6_ddrx_0_mcbx_dram_clk_n
+ PORT mcbx_dram_dq = axi_s6_ddrx_0_mcbx_dram_dq
+ PORT mcbx_dram_dqs = axi_s6_ddrx_0_mcbx_dram_dqs
+ PORT mcbx_dram_dqs_n = axi_s6_ddrx_0_mcbx_dram_dqs_n
+ PORT mcbx_dram_udqs = axi_s6_ddrx_0_mcbx_dram_udqs
+ PORT mcbx_dram_udqs_n = axi_s6_ddrx_0_mcbx_dram_udqs_n
+ PORT mcbx_dram_udm = axi_s6_ddrx_0_mcbx_dram_udm
+ PORT mcbx_dram_ldm = axi_s6_ddrx_0_mcbx_dram_ldm
+ PORT mcbx_dram_odt = axi_s6_ddrx_0_mcbx_dram_odt
+ PORT mcbx_dram_ddr3_rst = axi_s6_ddrx_0_mcbx_dram_ddr3_rst
+ PORT rzq = axi_s6_ddrx_0_rzq
+ PORT zio = axi_s6_ddrx_0_zio
  PORT s0_axi_aclk = clk_100_0000MHzPLL0
  PORT ui_clk = clk_100_0000MHzPLL0
  PORT sysclk_2x = clk_600_0000MHzPLL0_nobuf
