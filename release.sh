@@ -5,15 +5,15 @@ REPOSITORY=TE060X-GigaBee-Reference-Designs
 PROJECT_LIST='1 2 3 4 5'
 # Project 1 description
 # List of folders requred to release (First will be used as name)
-NAME1='GigaBee_XC6LX-Axi'
+NAME1='GigaBee_XPS13.2-Axi'
 # Tool used to build
-TOOL1='EDK-13.2'
+TOOL1='XPS-13.2'
 # Project Version
 VER1='1.0'
 
 # Project 2 description
 NAME2='GigaBee_XC6LX-Axi_lite'
-TOOL2='EDK-13.2'
+TOOL2='XPS-13.2'
 VER2='1.0'
 
 # Project 3 description
