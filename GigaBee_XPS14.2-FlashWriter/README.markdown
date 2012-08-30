@@ -12,7 +12,7 @@ LEDs status:
 Initially all LEDs off
 <table>
 <th>
-<td>Test</td><td>LED</td><td>LED location</td>
+<td>LED</td><td>LED location</td>
 </th>
 <tr>
 <td>Timer OK</td><td>LED 0 ON</td><td>(on module)</td>
