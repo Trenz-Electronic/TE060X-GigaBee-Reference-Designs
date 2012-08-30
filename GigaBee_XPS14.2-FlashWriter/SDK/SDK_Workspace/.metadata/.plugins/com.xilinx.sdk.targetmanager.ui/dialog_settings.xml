@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\memory_tests_0\Debug\memory_tests_0.elf" key="hw_hw_platform_original-microblaze_0-initElf"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\listen_server_poolled\Debug\listen_server_poolled.elf" key="hw_platform_64k_bram-microblaze_0-initElf"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform\system_bd.bmm" key="hw_platform-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_64kbram_QSPIflash\system_bd.bmm" key="hw_platform_64kbram_QSPIflash-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\memory_tests_0\Debug\memory_tests_0.elf" key="hw_platform-microblaze_0-initElf"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_64k_bram\system_bd.bmm" key="hw_platform_64k_bram-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\listen_server_poolled\Debug\listen_server_poolled.elf" key="hw_platform_64kbram_QSPIflash-microblaze_0-initElf"/>
+	<item value="bootloop" key="hw_platform_failed1constraint-microblaze_0-initElf"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX100\system_bd.bmm" key="hw_platform_flashwriter_LX100-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_hw_platform_original\system_bd.bmm" key="hw_hw_platform_original-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_failed1constraint\system_bd.bmm" key="hw_platform_failed1constraint-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform\system.bit" key="hw_platform-bitFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_1\system_bd.bmm" key="hw_platform_1-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_failed1constraint\system.bit" key="hw_platform_failed1constraint-bitFile"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\listen_server_poolled\Debug\listen_server_poolled.elf" key="hw_platform_flashwriter_LX45-microblaze_0-initElf"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\listen_server_poolled\Debug\listen_server_poolled.elf" key="hw_platform_flashwriter_LX100-microblaze_0-initElf"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX150\system.bit" key="hw_platform_flashwriter_LX150-bitFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_64kbram_QSPIflash\system.bit" key="hw_platform_64kbram_QSPIflash-bitFile"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX100\system.bit" key="hw_platform_flashwriter_LX100-bitFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_1\system.bit" key="hw_platform_1-bitFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_platform_64k_bram\system.bit" key="hw_platform_64k_bram-bitFile"/>
+	<item value="bootloop" key="hw_platform_flashwriter_LX150-microblaze_0-initElf"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX45\system.bit" key="hw_platform_flashwriter_LX45-bitFile"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX45\system_bd.bmm" key="hw_platform_flashwriter_LX45-bmmFile"/>
+	<item value="I:\OPTOMOTIVE\OptomotiveSoftware\GigaBee_XC6LX-Axi_FLASHWRITER\SDK\SDK_Workspace\hw_platform_flashwriter_LX150\system_bd.bmm" key="hw_platform_flashwriter_LX150-bmmFile"/>
+	<item value="C:\XilinxWorkspace\GigaBee_XC6LX-Axi_original\SDK\SDK_Workspace\hw_hw_platform_original\system.bit" key="hw_hw_platform_original-bitFile"/>
+	<item value="bootloop" key="hw_platform_1-microblaze_0-initElf"/>
+</section>

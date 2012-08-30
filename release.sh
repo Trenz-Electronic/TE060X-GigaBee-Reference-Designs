@@ -2,7 +2,7 @@
 # Projects to release
 REPOSITORY=TE060X-GigaBee-Reference-Designs
 # Numbers of projects to release (list like '1 2 3 4')
-PROJECT_LIST='1 2 3 4 5'
+PROJECT_LIST='1 2 3 4 5 6'
 # Project 1 description
 # List of folders requred to release (First will be used as name)
 NAME1='GigaBee_XPS13.2-Axi'
@@ -30,6 +30,14 @@ VER4='1.0'
 NAME5='GigaBee_UDP-Datalogger'
 TOOL5='ISE-13.1'
 VER5='1.0'
+
+# Project 6 description
+NAME6='GigaBee_XPS14.2-FlashWriter'
+# Tool used to build
+TOOL6='XPS-14.2'
+# Project Version
+VER6='1.0'
+
 ############# Do not edit below this line !!!
 SUBVER=`git rev-parse --short HEAD`
 

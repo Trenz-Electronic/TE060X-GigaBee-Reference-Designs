@@ -1,0 +1,41 @@
+Release 14.2 - libgen Xilinx EDK 14.2 Build EDK_P.28xd
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform/system.xml -lp ../repo -pe microblaze_0
+-log libgen.log system.mss 
+
+WARNING:EDK:411 - axidma -
+   C:\Users\knk\Downloads\GigaBee-XPS14.2-FlashWriter\SDK\SDK_Workspace\standalo
+   ne_bsp\system.mss line 33 - deprecated driver!
+WARNING:EDK:411 - xilisf -
+   C:\Users\knk\Downloads\GigaBee-XPS14.2-FlashWriter\SDK\SDK_Workspace\standalo
+   ne_bsp\system.mss line 112 - deprecated library!
+WARNING:EDK:469 -
+   C:\Xilinx\14.2\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers\axiethernet_v3_00_a
+   \data\axiethernet_v2_1_0.mdd line 51 - Driver axiethernet 3.00.a does not
+   support peripheral axi_ethernet 2.01.a. List of peripherals supported by
+   driver "axiethernet" are : "axi_ethernet_v[3-9]_[0-9][1-9]_[a-z] " !
+WARNING:EDK:468 -
+   C:\Users\knk\Downloads\GigaBee-XPS14.2-FlashWriter\SDK\SDK_Workspace\standalo
+   ne_bsp\system.mss line 30 - Driver "axiethernet" does not support Hardware
+   Instance "ETHERNET" !
+
+Staging source files.
+Running DRCs.
+Running DRC for XilIsf library... 
+
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-multiply-high
+-mxl-barrel-shift -mxl-pattern-compare -mhard-float -mxl-float-convert
+-mxl-float-sqrt -mno-xl-soft-div -mcpu=v8.20.a  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-multiply-high
+-mxl-barrel-shift -mxl-pattern-compare -mhard-float -mxl-float-convert
+-mxl-float-sqrt -mno-xl-soft-div -mcpu=v8.20.a  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Running execs_generate.

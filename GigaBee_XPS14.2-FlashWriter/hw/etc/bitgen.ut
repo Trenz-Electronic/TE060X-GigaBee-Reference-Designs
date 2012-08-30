@@ -1,0 +1,17 @@
+-g TdoPin:PULLNONE
+-g StartUpClk:JTAGCLK
+#add other options here.
+-g UnusedPin:PULLNONE
+#-g CclkPin:PULLUP
+-g TdoPin:PULLNONE
+-g DonePin:PULLUP
+-g ProgPin:PULLUP
+-g TckPin:PULLUP
+-g TdiPin:PULLUP
+-g TmsPin:PULLUP
+-g LCK_cycle:NoWait
+-g Security:NONE
+-g ConfigRate:26      
+#1, 3, 6, 12, 26
+-g SPI_buswidth:4
+-g Persist:No

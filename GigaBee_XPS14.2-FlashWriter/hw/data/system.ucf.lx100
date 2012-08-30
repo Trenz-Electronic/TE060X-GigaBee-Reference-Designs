@@ -1,0 +1,151 @@
+#FPGA size specific constraints
+#PLL placement
+#necesarry for LX100 and LX150 devices
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+#necesarry for LX45 devices
+#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
+
+############################################################
+# GMII: IODELAY Constraints
+############################################################
+# Please modify the value of the IDELAY_VALUE
+# according to your design.
+# For more information on IDELAYCTRL and IODELAY, please
+# refer to the Spartan-6 User Guide.
+#
+#for LX45
+#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 8;
+#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 8;
+#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 8;
+#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 8;
+
+##for LX100
+INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 19;
+INST "*delay_gmii_rx_er"               IDELAY_VALUE = 17;
+
+##for LX150-3
+#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 37;
+#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 37;
+#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 37;
+#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 37;
+#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 37;
+#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 39;
+#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 39;
+#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 39;
+#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 37;
+#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 39;
+#
+###for LX150-2
+#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 34;
+#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 36;
+
+#end of FPGA size specific constraints
+
+#
+# pin constraints
+#
+NET CLK LOC=AA12 | IOSTANDARD = LVCMOS33;
+NET DIP_Switches_4Bits_TRI_I[0] LOC = U19 |  IOSTANDARD = LVCMOS15; #AV0
+NET DIP_Switches_4Bits_TRI_I[1] LOC = V20 |  IOSTANDARD = LVCMOS15; #AV1
+NET DIP_Switches_4Bits_TRI_I[2] LOC = M17 |  IOSTANDARD = LVCMOS15; #AV2
+NET DIP_Switches_4Bits_TRI_I[3] LOC = M18 |  IOSTANDARD = LVCMOS15; #AV3
+NET ETHERNET_MDC LOC = AA2  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_MDIO LOC = AB3  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_MII_TX_CLK LOC = W12  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_PHY_RST_N LOC = T15  |  IOSTANDARD = LVCMOS33  |  TIG;
+NET ETHERNET_RXD[0] LOC = Y3  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[1] LOC = W8  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[2] LOC = W4  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[3] LOC = U9  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[4] LOC = V7  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[5] LOC = V5  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[6] LOC = W9  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[7] LOC = U6  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_CLK LOC = Y11  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_DV LOC = Y4  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_ER LOC = Y8  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[0] LOC = AA18  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[1] LOC = AB14  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[2] LOC = AA16  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[3] LOC = W14   |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[4] LOC = T16   |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[5] LOC = Y14   |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[6] LOC = V15   |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[7] LOC = AA14  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_CLK LOC = R11  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_EN LOC = AB16  |  IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_ER LOC = AB18  |  IOSTANDARD = LVCMOS33;
+NET LEDs_4Bits_TRI_O[0] LOC = T20  |  IOSTANDARD = LVCMOS15; #on board
+NET LEDs_4Bits_TRI_O[1] LOC = H8  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_TRI_O[2] LOC = J7  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_TRI_O[3] LOC = T4  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_TRI_O[4] LOC = T3  |  IOSTANDARD = LVCMOS15;
+NET LEDs_4Bits_GPIO2_IO[0] LOC = H16 | IOSTANDARD = LVCMOS15;
+NET Push_Buttons_4Bits_TRI_I[0] LOC = P17 |  IOSTANDARD = LVCMOS15; #BR0
+NET Push_Buttons_4Bits_TRI_I[1] LOC = N16  |  IOSTANDARD = LVCMOS15; #BR1
+NET Push_Buttons_4Bits_TRI_I[2] LOC = P18  |  IOSTANDARD = LVCMOS15; #BR2
+NET Push_Buttons_4Bits_TRI_I[3] LOC = R19  |  IOSTANDARD = LVCMOS15; #BR3
+NET RESET LOC = W22  |  IOSTANDARD = "LVCMOS15"  |  TIG | PULLDOWN; #dummy
+NET RS232_Uart_1_sin LOC=C17 | PULLUP  |  IOSTANDARD = LVCMOS33;
+NET RS232_Uart_1_sout LOC = A17  |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_SCK_pin	LOC = Y21  |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_SS_pin	LOC = T5   |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_IO0_pin	LOC = AB20 |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_IO1_pin	LOC = AA20 |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_IO2_pin	LOC = U14  |  IOSTANDARD = LVCMOS33;
+NET axi_quad_spi_0_IO3_pin	LOC = U13  |  IOSTANDARD = LVCMOS33;
+NET Onewire_EEPROM_DQ_Wire LOC = T11 | IOSTANDARD = LVCMOS33;
+
+#
+# additional constraints
+#
+
+NET "CLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 125000 kHz;
+
+############################################################
+# External GMII Constraints                                #
+############################################################
+
+############################################################
+# The following are required to maximize setup/hold        #
+############################################################
+
+INST "ETHERNET_TXD<?>"  SLEW = FAST;
+INST "ETHERNET_TX_EN"  SLEW = FAST;
+INST "ETHERNET_TX_ER"  SLEW = FAST;
+INST "ETHERNET_TX_CLK" SLEW = FAST;
+
+############################################################
+# For Setup and Hold time analysis on GMII inputs          #
+############################################################
+# Define data valid window with respect to the clock.
+# The spec states that, worst case, the data is valid 2 ns before the clock edge.
+# The worst case it to provide zero hold time (a 2ns window in total)
+# Changed to remove TIMEGRP
+# TIMEGRP "IN_GMII" OFFSET = IN  2 ns VALID 2 ns BEFORE "gmii_rx_clk";
+# Set to allow for 100ps setup/hold trace delay difference in relation to clock
+OFFSET = IN  2.4 ns VALID 2.8 ns BEFORE "ETHERNET_RX_CLK";
+
