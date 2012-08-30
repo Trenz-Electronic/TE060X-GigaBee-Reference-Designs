@@ -40,27 +40,27 @@ Remarks:
 + When upgrading to XPS 13.3 or higher, we reccommend NOT to upgrade the AXI_ETHERNET core to v3.00.a, as we could not get it work!
 
 
-## GigaBee_XC6LX-Blinkin 
+## GigaBee_ISE13.2-Blinkin 
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/100/150
-Development environment: Xilinx ISE PN v13.2
+Development environment: Xilinx ISE 13.2
 * reference design: Clock and LED VHDL usage example
     good starting point for bistream generation options testing and SPI flash 
 	booting sucesfully tested with x4 SPI mode, 80MHz SPI clock and compression 
 	enabled
 
 
-## GigaBee_UDP_Datalogger
+## GigaBee_ISE13.1-UDP_Datalogger
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/100/150
-Development environment: Xilinx ISE XMP v13.1
+Development environment: Xilinx ISE 13.1
 This project demonstrates how to use the GigaBee module with its baseboard (equipped with an ethernet connector) as a data logger with 16 digital inputs and 16 digital outputs. Broadcast UDP packets are transmitted to a Gigabit Ethernet network.
 Gigabit Ethernet only design, it does not work with 100 megabit Ethernet.
 
-## GigaBee_XC6SLX-MIG
+## GigaBee_ISE12.4-MIG
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/100/150
 Development environment: Xilinx ISE PN v12.4
 Reference design: Memory Interface Generator 3.61 project ported to TE0600 (GigaBee)
 
-## GigaBee_XC6LX-AXI_lite 
+## GigaBee_XPS13.2-AXI_lite 
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/100/150
 Development environment: Xilinx ISE XMP v13.2
 Software from Xilinx XAPP1026 "LightWeight IP (lwIP) Application Examples"

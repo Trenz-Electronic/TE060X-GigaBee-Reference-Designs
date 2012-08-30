@@ -12,22 +12,22 @@ TOOL1='XPS-13.2'
 VER1='1.0'
 
 # Project 2 description
-NAME2='GigaBee_XC6LX-Axi_lite'
+NAME2='GigaBee_XPS13.2-Axi_lite'
 TOOL2='XPS-13.2'
 VER2='1.0'
 
 # Project 3 description
-NAME3='GigaBee_XC6LX-Blinkin'
+NAME3='GigaBee_XPS13.2-Blinkin'
 TOOL3='ISE-13.2'
 VER3='1.0'
 
 # Project 4 description
-NAME4='GigaBee_XC6SLX-MIG'
+NAME4='GigaBee_ISE12.4-MIG'
 TOOL4='ISE-12.4'
 VER4='1.0'
 
 # Project 5 description
-NAME5='GigaBee_UDP-Datalogger'
+NAME5='GigaBee_XPS13.1-UDP-Datalogger'
 TOOL5='ISE-13.1'
 VER5='1.0'
 
@@ -52,7 +52,8 @@ do
 	set $name
 	for proj in ${!namelist}
 	do
-		zip -rq $1-${!tool}-v${!ver}.${SUBVER}.zip ${REPOSITORY}/${proj}
+#		zip -rq $1-${!tool}-v${!ver}.${SUBVER}.zip ${REPOSITORY}/${proj}
+		zip -rq $1-v${!ver}.${SUBVER}.zip ${REPOSITORY}/${proj}
 	done
 done
 cd ${REPOSITORY}
