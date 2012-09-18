@@ -74,7 +74,7 @@ generic
           C1_P1_DATA_PORT_SIZE      : integer := 32;
     C1_MEMCLK_PERIOD        : integer := 3000; 
     C1_RST_ACT_LOW          : integer := 0; 
-    C1_INPUT_CLK_TYPE       : string := "DIFFERENTIAL"; 
+    C1_INPUT_CLK_TYPE       : string := "SINGLE_ENDED";
     C1_CALIB_SOFT_IP        : string := "TRUE"; 
     C1_SIMULATION           : string := "FALSE"; 
     DEBUG_EN                : integer := 0; 
@@ -88,7 +88,7 @@ generic
           C3_P1_DATA_PORT_SIZE      : integer := 32;
     C3_MEMCLK_PERIOD        : integer := 3000; 
     C3_RST_ACT_LOW          : integer := 0; 
-    C3_INPUT_CLK_TYPE       : string := "DIFFERENTIAL"; 
+    C3_INPUT_CLK_TYPE       : string := "SINGLE_ENDED"; 
     C3_CALIB_SOFT_IP        : string := "TRUE"; 
     C3_SIMULATION           : string := "FALSE"; 
     C3_MEM_ADDR_ORDER       : string := "ROW_BANK_COLUMN"; 
