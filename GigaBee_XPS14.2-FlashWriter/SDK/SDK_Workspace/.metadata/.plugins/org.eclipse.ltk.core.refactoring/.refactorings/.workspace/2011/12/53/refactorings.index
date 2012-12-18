@@ -1,7 +1,0 @@
-1324992982453	Delete resource 'hw_platform_1'
-1324996755843	Delete resource 'hw_platform_64k_bram'
-1324996761265	Delete resource 'hw_platform_64kbram_QSPIflash'
-1324996889187	Delete resource 'standalone_bsp_no_lwip'
-1324996897406	Delete resource 'standalone_bsp_no_lwip_flash'
-1325246943734	Delete resource 'hw_platform_failed1constraint'
-1325247687296	Delete resource 'hw_hw_platform'

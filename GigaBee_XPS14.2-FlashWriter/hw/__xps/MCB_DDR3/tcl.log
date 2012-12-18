@@ -1,6 +1,6 @@
 =========================================================================
-Time: Wed Aug 29 10:36:25 PM FLE Daylight Time 2012
-Running: run_batch_mode 172578688
+Time: Tue Dec 18 12:51:43 Mitteleuropäische Zeit 2012
+Running: run_batch_mode 167706112
 {COLLECTING:  INSTANCE MCB_DDR3    }
 {COLLECTING:  C_INTERCONNECT_S0_AXI_MASTERS microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM OPTIONAL string none microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM}
 {COLLECTING:  C_INTERCONNECT_S0_AXI_IS_ACLK_ASYNC 0 OPTIONAL_UPDATE integer 0 }
@@ -565,6 +565,6 @@ Running: run_batch_mode 172578688
 {SET: CHECK C_NUM_DQ_PINS = 16 (BATCH:OPTIONAL_UPDATE:CHECK:MPD:MPDVAL)}
 RETURN: 0
 =========================================================================
-Time: Wed Aug 29 10:36:28 PM FLE Daylight Time 2012
-Running: generate_corelevel_constraints 172578688
+Time: Tue Dec 18 12:51:46 Mitteleuropäische Zeit 2012
+Running: generate_corelevel_constraints 167706112
 RETURN: 

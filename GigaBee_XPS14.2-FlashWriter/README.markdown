@@ -7,7 +7,7 @@
 ## Project description
 FlashWriter is an application designed to demonstrate GigaBee FPGA module functionality.
 It offers GigaBee module selftest routines and fast Ethernet FLASH writing. 
-The selftest result is also reported on TE0603 LEDs, terminal and PC application.
+The selftest result is also reported on TE0600 LEDs, terminal and PC application.
 LEDs status:
 Initially all LEDs off
 <table>
@@ -44,7 +44,6 @@ The HW design is also compatible to Xilinx XAPP1026 Webserver reference design.
 - **host_sw_src** - Sources for gigabeeflash.exe executable on PC side. The project files are for Qt SDK v2010 or later.
 - **hw** - Xilinx EDK/SDK v14.2 project including HW design.
 - **ready_to_run** - Binaries for immediate use.
-- **SDK** - Firmware projects and IP repository
 
 ## Project build
 - Convert project for your module.
@@ -55,7 +54,7 @@ Run hw\set_lx150_project.bat if your module have LX150 chip.
 - Run "Hardware"->"Generate Bitstream"
 - Run "Project"->"Export Hardware Design to SDK..."
 - select "Export & Launch SDK"
-- select "SDK\SDK_Workspace" as Workspace folder
+- select "hw\SDK\SDK_Workspace" as Workspace folder
 
 The flashwriter SW executable is small in size can run from the 64kB BRAM! 
 No bootloader is necessary.

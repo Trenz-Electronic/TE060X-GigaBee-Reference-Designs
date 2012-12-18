@@ -30,6 +30,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="blinkin.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_BIN" xil_pn:name="blinkin.bin"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="blinkin.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="blinkin.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="blinkin.cmd_log"/>
@@ -62,9 +63,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="blinkin_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="blinkin_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="blinkin_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="blinkin_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="blinkin_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="blinkin_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="blinkin_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -100,63 +103,85 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1330157916" xil_pn:in_ck="-8448011350670832818" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8617278484450784337" xil_pn:start_ts="1330157906">
+    <transform xil_pn:end_ts="1354718902" xil_pn:in_ck="-8448011350670832818" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8617278484450784337" xil_pn:start_ts="1354718891">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="blinkin.lso"/>
+      <outfile xil_pn:name="blinkin.ngc"/>
+      <outfile xil_pn:name="blinkin.ngr"/>
+      <outfile xil_pn:name="blinkin.prj"/>
+      <outfile xil_pn:name="blinkin.stx"/>
+      <outfile xil_pn:name="blinkin.syr"/>
+      <outfile xil_pn:name="blinkin.xst"/>
+      <outfile xil_pn:name="blinkin_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1330157916" xil_pn:in_ck="-5287637660550512670" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6172903350900708191" xil_pn:start_ts="1330157916">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1330157923" xil_pn:in_ck="988900136051438255" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6201340695808665599" xil_pn:start_ts="1330157916">
+    <transform xil_pn:end_ts="1354718909" xil_pn:in_ck="988900136051438255" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6201340695808665599" xil_pn:start_ts="1354718902">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="blinkin.bld"/>
+      <outfile xil_pn:name="blinkin.ngd"/>
+      <outfile xil_pn:name="blinkin_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1330157941" xil_pn:in_ck="-8907081377393549200" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-7060404927121445762" xil_pn:start_ts="1330157923">
+    <transform xil_pn:end_ts="1354718921" xil_pn:in_ck="-8907081377393549200" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-7060404927121445762" xil_pn:start_ts="1354718909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="blinkin.pcf"/>
+      <outfile xil_pn:name="blinkin_map.map"/>
+      <outfile xil_pn:name="blinkin_map.mrp"/>
+      <outfile xil_pn:name="blinkin_map.ncd"/>
+      <outfile xil_pn:name="blinkin_map.ngm"/>
+      <outfile xil_pn:name="blinkin_map.xrpt"/>
+      <outfile xil_pn:name="blinkin_summary.xml"/>
+      <outfile xil_pn:name="blinkin_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1330157967" xil_pn:in_ck="-8892209629793337783" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1330157941">
+    <transform xil_pn:end_ts="1354718937" xil_pn:in_ck="-8892209629793337783" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1354718921">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="blinkin.ncd"/>
+      <outfile xil_pn:name="blinkin.pad"/>
+      <outfile xil_pn:name="blinkin.par"/>
+      <outfile xil_pn:name="blinkin.ptwx"/>
+      <outfile xil_pn:name="blinkin.unroutes"/>
+      <outfile xil_pn:name="blinkin.xpi"/>
+      <outfile xil_pn:name="blinkin_pad.csv"/>
+      <outfile xil_pn:name="blinkin_pad.txt"/>
+      <outfile xil_pn:name="blinkin_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1330157985" xil_pn:in_ck="155259684233486218" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="335873702051717080" xil_pn:start_ts="1330157968">
+    <transform xil_pn:end_ts="1354718958" xil_pn:in_ck="155259684233486218" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="1467156026577939640" xil_pn:start_ts="1354718937">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="blinkin.bgn"/>
+      <outfile xil_pn:name="blinkin.bin"/>
+      <outfile xil_pn:name="blinkin.bit"/>
+      <outfile xil_pn:name="blinkin.drc"/>
+      <outfile xil_pn:name="blinkin.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1330157967" xil_pn:in_ck="6090393237676181740" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1330157956">
+    <transform xil_pn:end_ts="1354718937" xil_pn:in_ck="6090393237676181740" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1354718931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="blinkin.twr"/>
+      <outfile xil_pn:name="blinkin.twx"/>
     </transform>
   </transforms>
 

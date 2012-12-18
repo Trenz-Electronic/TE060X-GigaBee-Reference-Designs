@@ -1,2 +1,0 @@
-make -k clean 
-rm -rf microblaze_0

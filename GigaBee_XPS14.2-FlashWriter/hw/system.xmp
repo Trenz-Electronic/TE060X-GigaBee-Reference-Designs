@@ -3,10 +3,10 @@ XmpVersion: 14.2
 VerMgmt: 14.2
 IntStyle: default
 Flow: ise
-ModuleSearchPath: ../SDK/SDK_Workspace/repo
+ModuleSearchPath: ../repo
 MHS File: system.mhs
 Architecture: spartan6
-Device: xc6slx45
+Device: xc6slx100
 Package: fgg484
 SpeedGrade: -2
 UserCmd1: 
@@ -39,5 +39,5 @@ DCacheAddr: MCB_DDR3,C_S3_AXI_BASEADDR
 DCacheAddr: MCB_DDR3,C_S4_AXI_BASEADDR
 DCacheAddr: MCB_DDR3,C_S5_AXI_BASEADDR
 Processor: microblaze_0
-ElfImp: 
+ElfImp: SDK/SDK_Workspace/flashwriter/Debug/flashwriter.elf
 ElfSim: 

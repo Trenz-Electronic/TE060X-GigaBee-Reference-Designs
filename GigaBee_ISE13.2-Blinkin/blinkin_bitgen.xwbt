@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin\blinkin.ncd
-OUTFILE=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin\blinkin.bit
+INFILE=B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_ISE13.2-Blinkin\blinkin.ncd
+OUTFILE=B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_ISE13.2-Blinkin\blinkin.bit
 FAMILY=Spartan6
-PART=xc6slx150-2fgg484
-WORKINGDIR=C:\Projects\Trenz\repos\TE060X-GigaBee-Reference-Designs\GigaBee_XC6LX-Blinkin
+PART=xc6slx45-2fgg484
+WORKINGDIR=B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_ISE13.2-Blinkin
 LICENSE=ISE
-USER_INFO=No user information available.
+USER_INFO=16020553_207303401_209847264_845

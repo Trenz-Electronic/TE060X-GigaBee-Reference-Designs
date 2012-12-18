@@ -1,9 +1,9 @@
 #FPGA size specific constraints
 #PLL placement
 #necesarry for LX100 and LX150 devices
-#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
 #necesarry for LX45 devices
-INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
+#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
 
 ############################################################
 # GMII: IODELAY Constraints
@@ -14,28 +14,28 @@ INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" 
 # refer to the Spartan-6 User Guide.
 #
 #for LX45
-INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 8;
-INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 8;
-INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 10;
-INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 8;
-INST "*delay_gmii_rx_er"               IDELAY_VALUE = 8;
+#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 8;
+#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 8;
+#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 10;
+#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 8;
+#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 8;
 
 ##for LX100
-#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 19;
-#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 19;
-#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 19;
-#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 19;
-#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 19;
-#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 17;
-#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 17;
-#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 17;
-#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 19;
-#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 17;
+INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 19;
+INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 17;
+INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 19;
+INST "*delay_gmii_rx_er"               IDELAY_VALUE = 17;
 
 ##for LX150-3
 #INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 37;
@@ -108,8 +108,6 @@ NET Push_Buttons_4Bits_TRI_I[1] LOC = N16  |  IOSTANDARD = LVCMOS15; #BR1
 NET Push_Buttons_4Bits_TRI_I[2] LOC = P18  |  IOSTANDARD = LVCMOS15; #BR2
 NET Push_Buttons_4Bits_TRI_I[3] LOC = R19  |  IOSTANDARD = LVCMOS15; #BR3
 NET RESET LOC = W22  |  IOSTANDARD = "LVCMOS15"  |  TIG | PULLDOWN; #dummy
-NET RS232_Uart_1_sin LOC=C17 | PULLUP  |  IOSTANDARD = LVCMOS33;
-NET RS232_Uart_1_sout LOC = A17  |  IOSTANDARD = LVCMOS33;
 NET axi_quad_spi_0_SCK_pin	LOC = Y21  |  IOSTANDARD = LVCMOS33;
 NET axi_quad_spi_0_SS_pin	LOC = T5   |  IOSTANDARD = LVCMOS33;
 NET axi_quad_spi_0_IO0_pin	LOC = AB20 |  IOSTANDARD = LVCMOS33;
@@ -117,6 +115,12 @@ NET axi_quad_spi_0_IO1_pin	LOC = AA20 |  IOSTANDARD = LVCMOS33;
 NET axi_quad_spi_0_IO2_pin	LOC = U14  |  IOSTANDARD = LVCMOS33;
 NET axi_quad_spi_0_IO3_pin	LOC = U13  |  IOSTANDARD = LVCMOS33;
 NET Onewire_EEPROM_DQ_Wire LOC = T11 | IOSTANDARD = LVCMOS33;
+# TE0603
+#NET RS232_Uart_1_sin LOC=C17 | PULLUP  |  IOSTANDARD = LVCMOS33;
+#NET RS232_Uart_1_sout LOC = A17  |  IOSTANDARD = LVCMOS33;
+# TE0604 FTDI UART
+NET RS232_Uart_1_sin	LOC = AB17 | IOSTANDARD = LVCMOS33 | PULLUP;
+NET RS232_Uart_1_sout	LOC = Y17  | IOSTANDARD = LVCMOS33;
 
 #
 # additional constraints
