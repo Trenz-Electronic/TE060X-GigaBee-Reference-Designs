@@ -60,7 +60,8 @@
  PORT Ethernet_Lite_RX_CLK = Ethernet_Lite_RX_CLK, DIR = I
  PORT Ethernet_Lite_CRS = Ethernet_Lite_CRS, DIR = I
  PORT Ethernet_Lite_RX_DV = Ethernet_Lite_RX_DV, DIR = I
- PORT Ethernet_Lite_PHY_RST_N = Ethernet_Lite_PHY_RST_N, DIR = O
+# PORT Ethernet_Lite_PHY_RST_N = Ethernet_Lite_PHY_RST_N, DIR = O
+ PORT Ethernet_Lite_PHY_RST_N = pll0_locked, DIR = O
 
 
 BEGIN axi_interconnect

@@ -61,7 +61,7 @@
  PORT ETHERNET_RX_ER = ETHERNET_RX_ER, DIR = I
  PORT ETHERNET_RX_CLK = ETHERNET_RX_CLK, DIR = I
  PORT ETHERNET_RX_DV = ETHERNET_RX_DV, DIR = I
- PORT ETHERNET_PHY_RST_N = ETHERNET_PHY_RST_N, DIR = O
+ PORT ETHERNET_PHY_RST_N = pll0_locked, DIR = O
  PORT mcbx1_dram_clk = mcbx1_dram_clk, DIR = O
  PORT mcbx1_dram_clk_n = mcbx1_dram_clk_n, DIR = O
  PORT mcbx1_dram_cke = mcbx1_dram_cke, DIR = O

@@ -60,7 +60,8 @@
  PORT ETHERNET_RX_ER = ETHERNET_RX_ER, DIR = I
  PORT ETHERNET_RX_CLK = ETHERNET_RX_CLK, DIR = I
  PORT ETHERNET_RX_DV = ETHERNET_RX_DV, DIR = I
- PORT ETHERNET_PHY_RST_N = ETHERNET_PHY_RST_N, DIR = O
+# PORT ETHERNET_PHY_RST_N = ETHERNET_PHY_RST_N, DIR = O
+ PORT ETHERNET_PHY_RST_N = pll0_locked, DIR = O
  PORT axi_s6_ddrx_0_mcbx_dram_addr = axi_s6_ddrx_0_mcbx_dram_addr, DIR = O, VEC = [12:0]
  PORT axi_s6_ddrx_0_mcbx_dram_ba = axi_s6_ddrx_0_mcbx_dram_ba, DIR = O, VEC = [2:0]
  PORT axi_s6_ddrx_0_mcbx_dram_ras_n = axi_s6_ddrx_0_mcbx_dram_ras_n, DIR = O
