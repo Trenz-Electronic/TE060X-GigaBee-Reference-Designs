@@ -1,0 +1,1 @@
+ -p spartan6 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s mgm -X B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/

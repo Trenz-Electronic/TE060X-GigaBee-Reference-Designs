@@ -1,0 +1,9 @@
+-batch 
+-create axi_1wire 
+-ver 1.00.a 
+-dir "B:\SVN\CustomerProjects\Schleich\S-Analyzer\current\hdl\k-boot" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 4 
+-xps 
+-driver 

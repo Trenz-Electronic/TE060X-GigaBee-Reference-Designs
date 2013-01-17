@@ -1,0 +1,131 @@
+#------------------------------------------------------------------------------
+# Board		: TE0600-0{1|2}
+# Baseboard	: TE0603 | TE0604
+#------------------------------------------------------------------------------
+#
+# pin constraints
+#
+NET RESET	 			LOC = W22  | IOSTANDARD = LVCMOS15  |  TIG | PULLDOWN;
+NET CLK 				LOC = AA12 | IOSTANDARD = LVCMOS33;
+
+# Ethernet
+NET ETHERNET_MDC 		LOC = AA2  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_MDIO 		LOC = AB3  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_MII_TX_CLK LOC = W12  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_PHY_RST_N 	LOC = T15  | IOSTANDARD = LVCMOS33  |  TIG;
+NET ETHERNET_RXD[0] 	LOC = Y3   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[1] 	LOC = W8   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[2] 	LOC = W4   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[3] 	LOC = U9   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[4] 	LOC = V7   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[5] 	LOC = V5   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[6] 	LOC = W9   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RXD[7] 	LOC = U6   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_CLK 	LOC = Y11  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_DV 		LOC = Y4   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_RX_ER 		LOC = Y8   | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[0] 	LOC = AA18 | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[1] 	LOC = AB14 | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[2] 	LOC = AA16 | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[3] 	LOC = W14  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[4] 	LOC = T16  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[5] 	LOC = Y14  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[6] 	LOC = V15  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TXD[7] 	LOC = AA14 | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_CLK 	LOC = R11  | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_EN 		LOC = AB16 | IOSTANDARD = LVCMOS33;
+NET ETHERNET_TX_ER 		LOC = AB18 | IOSTANDARD = LVCMOS33;
+
+# Onboard SPI
+NET spi_0_SCK_pin		LOC = Y21  | IOSTANDARD = LVCMOS33;
+NET spi_0_SS_pin		LOC = T5   | IOSTANDARD = LVCMOS33;
+NET spi_0_IO0_pin		LOC = AB20 | IOSTANDARD = LVCMOS33;
+NET spi_0_IO1_pin		LOC = AA20 | IOSTANDARD = LVCMOS33;
+NET spi_0_IO2_pin		LOC = U14  | IOSTANDARD = LVCMOS33;
+NET spi_0_IO3_pin		LOC = U13  | IOSTANDARD = LVCMOS33;
+
+# Onboard One Wire
+NET onewire_0_pin 		LOC = T11  | IOSTANDARD = LVCMOS33;
+
+# TE0604 FTDI UART
+NET uart_0_sin 			LOC = AB17 | IOSTANDARD = LVCMOS33 | PULLUP;
+NET uart_0_sout 		LOC = Y17  | IOSTANDARD = LVCMOS33;
+
+# Onboard LED
+NET led_pin[0] 			LOC = T20  | IOSTANDARD = LVCMOS15; # Board
+# TE0604 LEDs
+NET led_pin[1]			LOC = A20  | IOSTANDARD = LVCMOS15; # "0"
+NET led_pin[2]			LOC = A21  | IOSTANDARD = LVCMOS15; # "1"
+NET led_pin[3]			LOC = B21  | IOSTANDARD = LVCMOS15; # "2"
+NET led_pin[4]			LOC = B22  | IOSTANDARD = LVCMOS15; # "3"
+NET led_pin[5]			LOC = J16  | IOSTANDARD = LVCMOS15; # "4"
+NET led_pin[6]			LOC = K16  | IOSTANDARD = LVCMOS15; # "5"
+NET led_pin[7]			LOC = L17  | IOSTANDARD = LVCMOS15; # "6"
+NET led_pin[8]			LOC = K18  | IOSTANDARD = LVCMOS15; # "7"
+NET led_pin[9]			LOC = T3   | IOSTANDARD = LVCMOS15;	# "X"
+# TE0603 LEDs
+#NET led_pin[1] 		LOC = H8   |  IOSTANDARD = LVCMOS15;
+#NET led_pin[2] 		LOC = J7   |  IOSTANDARD = LVCMOS15;
+#NET led_pin[3] 		LOC = T4   |  IOSTANDARD = LVCMOS15;
+#NET led_pin[4] 		LOC = T3   |  IOSTANDARD = LVCMOS15;
+
+#TE0604 Switch
+NET sw_pin[0] 			LOC = G17  | IOSTANDARD = LVCMOS15;
+NET sw_pin[1] 			LOC = G16  | IOSTANDARD = LVCMOS15;
+NET sw_pin[2] 			LOC = F17  | IOSTANDARD = LVCMOS15;
+NET sw_pin[3] 			LOC = F16  | IOSTANDARD = LVCMOS15;
+#------------------------------------------------------------------------------
+# additional constraints
+#------------------------------------------------------------------------------
+
+NET "CLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 125000 kHz;
+
+############################################################
+# External GMII Constraints                                #
+############################################################
+
+############################################################
+# The following are required to maximize setup/hold        #
+############################################################
+
+INST "ETHERNET_TXD<?>"  SLEW = FAST;
+INST "ETHERNET_TX_EN"  SLEW = FAST;
+INST "ETHERNET_TX_ER"  SLEW = FAST;
+INST "ETHERNET_TX_CLK" SLEW = FAST;
+
+############################################################
+# For Setup and Hold time analysis on GMII inputs          #
+############################################################
+# Define data valid window with respect to the clock.
+# The spec states that, worst case, the data is valid 2 ns before the clock edge.
+# The worst case it to provide zero hold time (a 2ns window in total)
+# Changed to remove TIMEGRP
+# TIMEGRP "IN_GMII" OFFSET = IN  2 ns VALID 2 ns BEFORE "gmii_rx_clk";
+# Set to allow for 100ps setup/hold trace delay difference in relation to clock
+OFFSET = IN  2.4 ns VALID 2.8 ns BEFORE "ETHERNET_RX_CLK";
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#FPGA size specific constraints
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#FPGA size specific constraints
+#PLL placement
+#necesarry for LX100 and LX150 devices
+#INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+#necesarry for LX45 devices
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y1";
+
+############################################################
+# GMII: IODELAY Constraints
+############################################################
+#for LX45
+INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 8;
+INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 8;
+INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 10;
+INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 8;
+INST "*delay_gmii_rx_er"               IDELAY_VALUE = 8;

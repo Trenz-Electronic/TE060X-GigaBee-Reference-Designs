@@ -1,0 +1,30 @@
+#FPGA size specific constraints
+#PLL placement
+#necesarry for LX100 and LX150 devices
+INST "clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst" LOC = "PLL_ADV_X0Y2";
+############################################################
+# GMII: IODELAY Constraints
+############################################################
+##for LX150-3
+INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 37;
+INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 37;
+INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 37;
+INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 37;
+INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 37;
+INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 39;
+INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 39;
+INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 39;
+INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 37;
+INST "*delay_gmii_rx_er"               IDELAY_VALUE = 39;
+
+##for LX150-2
+#INST "*data_bus[0].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[1].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[2].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[3].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[4].delay_gmii_rxd"     IDELAY_VALUE = 34;
+#INST "*data_bus[5].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*data_bus[6].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*data_bus[7].delay_gmii_rxd"     IDELAY_VALUE = 36;
+#INST "*delay_gmii_rx_dv"               IDELAY_VALUE = 34;
+#INST "*delay_gmii_rx_er"               IDELAY_VALUE = 36;

@@ -1,0 +1,50 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi4_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi4_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\axi4_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\axi4lite_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\clock_generator_1.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\clock_generator_1.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\clock_generator_1.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\debug_module.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\RS232_Uart_1.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\RS232_Uart_1.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\RS232_Uart_1.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\switches_gpio.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\switches_gpio.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\switches_gpio.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\leds_gpio.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\leds_gpio.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\leds_gpio.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\MCB_DDR3.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\MCB_DDR3.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\MCB_DDR3.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\ETHERNET.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\ETHERNET.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\ETHERNET.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\axi_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\ETHERNET_dma.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\ETHERNET_dma.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\ETHERNET_dma.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\microblaze_0_intc.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\QSPI_Flash.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\QSPI_Flash.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\QSPI_Flash.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi_1wire_0.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\axi_1wire_0.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\axi_1wire_0.svg"/>
+
+  <RENDERIMG RASNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="B:\GIT\TE060X-GigaBee-Reference-Designs\GigaBee_XPS14.2-Base\__xps\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

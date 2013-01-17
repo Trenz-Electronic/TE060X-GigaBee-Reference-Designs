@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          B:\SVN\CustomerProjects\Schleich\S-Analyzer\current\hdl\k-boot/drivers/axi_1wire_v1_00_a/data/axi_1wire_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Wed Dec 26 13:05:06 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER axi_1wire
+
+  OPTION supported_peripherals = (axi_1wire);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER
