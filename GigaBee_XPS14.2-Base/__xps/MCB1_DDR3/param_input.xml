@@ -577,7 +577,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_S0_AXI_HIGHADDR</spirit:name>
-        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="MCB1_DDR3.C_S0_AXI_HIGHADDR"> "0x4FFFFFFF" </spirit:value>
+        <spirit:value spirit:format="STD_LOGIC_VECTOR" spirit:resolve="OPTIONAL" spirit:id="MCB1_DDR3.C_S0_AXI_HIGHADDR"> "0x4fffffff" </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_S0_AXI_ID_WIDTH</spirit:name>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-01-17T14:21:38</DateModified>
+  <DateModified>2013-01-18T13:16:23</DateModified>
   <ModuleName>system</ModuleName>
-  <SummaryTimeStamp>2013-01-17T14:21:35</SummaryTimeStamp>
+  <SummaryTimeStamp>2013-01-18T13:16:21</SummaryTimeStamp>
   <SavedFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/__xps/ise/system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/__xps/ise</SavedFilterFilePath>

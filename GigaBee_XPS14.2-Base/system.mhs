@@ -16,25 +16,44 @@
  PORT CLK = CLK, DIR = I, SIGIS = CLK, CLK_FREQ = 125000000
  PORT uart_0_sout = uart_1_sout, DIR = O
  PORT uart_0_sin = uart_1_sin, DIR = I
- PORT mcbx_dram_clk = mcbx_dram_clk, DIR = O
- PORT mcbx_dram_clk_n = mcbx_dram_clk_n, DIR = O
- PORT mcbx_dram_cke = mcbx_dram_cke, DIR = O
- PORT mcbx_dram_odt = mcbx_dram_odt, DIR = O
- PORT mcbx_dram_ras_n = mcbx_dram_ras_n, DIR = O
- PORT mcbx_dram_cas_n = mcbx_dram_cas_n, DIR = O
- PORT mcbx_dram_we_n = mcbx_dram_we_n, DIR = O
- PORT mcbx_dram_udm = mcbx_dram_udm, DIR = O
- PORT mcbx_dram_ldm = mcbx_dram_ldm, DIR = O
- PORT mcbx_dram_ba = mcbx_dram_ba, DIR = O, VEC = [2:0]
- PORT mcbx_dram_addr = mcbx_dram_addr, DIR = O, VEC = [12:0]
- PORT mcbx_dram_ddr3_rst = mcbx_dram_ddr3_rst, DIR = O
- PORT mcbx_dram_dq = mcbx_dram_dq, DIR = IO, VEC = [15:0]
- PORT mcbx_dram_dqs = mcbx_dram_dqs, DIR = IO
- PORT mcbx_dram_dqs_n = mcbx_dram_dqs_n, DIR = IO
- PORT mcbx_dram_udqs = mcbx_dram_udqs, DIR = IO
- PORT mcbx_dram_udqs_n = mcbx_dram_udqs_n, DIR = IO
- PORT rzq = rzq, DIR = IO
- PORT zio = zio, DIR = IO
+ PORT mcbx3_dram_clk = mcbx3_dram_clk, DIR = O
+ PORT mcbx3_dram_clk_n = mcbx3_dram_clk_n, DIR = O
+ PORT mcbx3_dram_cke = mcbx3_dram_cke, DIR = O
+ PORT mcbx3_dram_odt = mcbx3_dram_odt, DIR = O
+ PORT mcbx3_dram_ras_n = mcbx3_dram_ras_n, DIR = O
+ PORT mcbx3_dram_cas_n = mcbx3_dram_cas_n, DIR = O
+ PORT mcbx3_dram_we_n = mcbx3_dram_we_n, DIR = O
+ PORT mcbx3_dram_udm = mcbx3_dram_udm, DIR = O
+ PORT mcbx3_dram_ldm = mcbx3_dram_ldm, DIR = O
+ PORT mcbx3_dram_ba = mcbx3_dram_ba, DIR = O, VEC = [2:0]
+ PORT mcbx3_dram_addr = mcbx3_dram_addr, DIR = O, VEC = [12:0]
+ PORT mcbx3_dram_ddr3_rst = mcbx3_dram_ddr3_rst, DIR = O
+ PORT mcbx3_dram_dq = mcbx3_dram_dq, DIR = IO, VEC = [15:0]
+ PORT mcbx3_dram_dqs = mcbx3_dram_dqs, DIR = IO
+ PORT mcbx3_dram_dqs_n = mcbx3_dram_dqs_n, DIR = IO
+ PORT mcbx3_dram_udqs = mcbx3_dram_udqs, DIR = IO
+ PORT mcbx3_dram_udqs_n = mcbx3_dram_udqs_n, DIR = IO
+ PORT rzq3 = rzq3, DIR = IO
+ PORT zio3 = zio3, DIR = IO
+ PORT mcbx1_dram_clk = mcbx1_dram_clk, DIR = O
+ PORT mcbx1_dram_clk_n = mcbx1_dram_clk_n, DIR = O
+ PORT mcbx1_dram_cke = mcbx1_dram_cke, DIR = O
+ PORT mcbx1_dram_odt = mcbx1_dram_odt, DIR = O
+ PORT mcbx1_dram_ras_n = mcbx1_dram_ras_n, DIR = O
+ PORT mcbx1_dram_cas_n = mcbx1_dram_cas_n, DIR = O
+ PORT mcbx1_dram_we_n = mcbx1_dram_we_n, DIR = O
+ PORT mcbx1_dram_udm = mcbx1_dram_udm, DIR = O
+ PORT mcbx1_dram_ldm = mcbx1_dram_ldm, DIR = O
+ PORT mcbx1_dram_ba = mcbx1_dram_ba, DIR = O, VEC = [2:0]
+ PORT mcbx1_dram_addr = mcbx1_dram_addr, DIR = O, VEC = [12:0]
+ PORT mcbx1_dram_ddr3_rst = mcbx1_dram_ddr3_rst, DIR = O
+ PORT mcbx1_dram_dq = mcbx1_dram_dq, DIR = IO, VEC = [15:0]
+ PORT mcbx1_dram_dqs = mcbx1_dram_dqs, DIR = IO
+ PORT mcbx1_dram_dqs_n = mcbx1_dram_dqs_n, DIR = IO
+ PORT mcbx1_dram_udqs = mcbx1_dram_udqs, DIR = IO
+ PORT mcbx1_dram_udqs_n = mcbx1_dram_udqs_n, DIR = IO
+ PORT rzq1 = rzq1, DIR = IO
+ PORT zio1 = zio1, DIR = IO
  PORT ETHERNET_MDIO = ETHERNET_MDIO, DIR = IO
  PORT ETHERNET_MDC = ETHERNET_MDC, DIR = O
  PORT ETHERNET_TX_ER = ETHERNET_TX_ER, DIR = O
@@ -85,7 +104,7 @@ BEGIN microblaze
  PARAMETER C_USE_ICACHE = 1
  PARAMETER C_ICACHE_ALWAYS_USED = 1
  PARAMETER C_DCACHE_BASEADDR = 0x40000000
- PARAMETER C_DCACHE_HIGHADDR = 0x47ffffff
+ PARAMETER C_DCACHE_HIGHADDR = 0x4fffffff
  PARAMETER C_USE_DCACHE = 1
  PARAMETER C_DCACHE_ALWAYS_USED = 1
  PARAMETER C_INTERCONNECT_M_AXI_DC_AW_REGISTER = 1
@@ -293,7 +312,7 @@ BEGIN axi_gpio
 END
 
 BEGIN axi_s6_ddrx
- PARAMETER INSTANCE = MCB_DDR3
+ PARAMETER INSTANCE = MCB3_DDR3
  PARAMETER HW_VER = 1.06.a
  PARAMETER C_MCB_RZQ_LOC = K7
  PARAMETER C_MCB_ZIO_LOC = Y2
@@ -311,26 +330,71 @@ BEGIN axi_s6_ddrx
  PARAMETER C_INTERCONNECT_S0_AXI_B_REGISTER = 1
  PARAMETER C_S0_AXI_BASEADDR = 0x40000000
  PARAMETER C_S0_AXI_HIGHADDR = 0x47ffffff
+ PARAMETER C_MCB_LOC = MEMC3
  BUS_INTERFACE S0_AXI = axi4_0
- PORT mcbx_dram_clk = mcbx_dram_clk
- PORT mcbx_dram_clk_n = mcbx_dram_clk_n
- PORT mcbx_dram_cke = mcbx_dram_cke
- PORT mcbx_dram_odt = mcbx_dram_odt
- PORT mcbx_dram_ras_n = mcbx_dram_ras_n
- PORT mcbx_dram_cas_n = mcbx_dram_cas_n
- PORT mcbx_dram_we_n = mcbx_dram_we_n
- PORT mcbx_dram_udm = mcbx_dram_udm
- PORT mcbx_dram_ldm = mcbx_dram_ldm
- PORT mcbx_dram_ba = mcbx_dram_ba
- PORT mcbx_dram_addr = mcbx_dram_addr
- PORT mcbx_dram_ddr3_rst = mcbx_dram_ddr3_rst
- PORT mcbx_dram_dq = mcbx_dram_dq
- PORT mcbx_dram_dqs = mcbx_dram_dqs
- PORT mcbx_dram_dqs_n = mcbx_dram_dqs_n
- PORT mcbx_dram_udqs = mcbx_dram_udqs
- PORT mcbx_dram_udqs_n = mcbx_dram_udqs_n
- PORT rzq = rzq
- PORT zio = zio
+ PORT mcbx_dram_clk = mcbx3_dram_clk
+ PORT mcbx_dram_clk_n = mcbx3_dram_clk_n
+ PORT mcbx_dram_cke = mcbx3_dram_cke
+ PORT mcbx_dram_odt = mcbx3_dram_odt
+ PORT mcbx_dram_ras_n = mcbx3_dram_ras_n
+ PORT mcbx_dram_cas_n = mcbx3_dram_cas_n
+ PORT mcbx_dram_we_n = mcbx3_dram_we_n
+ PORT mcbx_dram_udm = mcbx3_dram_udm
+ PORT mcbx_dram_ldm = mcbx3_dram_ldm
+ PORT mcbx_dram_ba = mcbx3_dram_ba
+ PORT mcbx_dram_addr = mcbx3_dram_addr
+ PORT mcbx_dram_ddr3_rst = mcbx3_dram_ddr3_rst
+ PORT mcbx_dram_dq = mcbx3_dram_dq
+ PORT mcbx_dram_dqs = mcbx3_dram_dqs
+ PORT mcbx_dram_dqs_n = mcbx3_dram_dqs_n
+ PORT mcbx_dram_udqs = mcbx3_dram_udqs
+ PORT mcbx_dram_udqs_n = mcbx3_dram_udqs_n
+ PORT rzq = rzq3
+ PORT zio = zio3
+ PORT s0_axi_aclk = clk_62_5000MHzPLL0
+ PORT ui_clk = clk_62_5000MHzPLL0
+ PORT sysclk_2x = clk_600_0000MHzPLL0_nobuf
+ PORT sysclk_2x_180 = clk_600_0000MHz180PLL0_nobuf
+ PORT SYS_RST = proc_sys_reset_0_BUS_STRUCT_RESET
+ PORT PLL_LOCK = pll0_locked
+END
+
+BEGIN axi_s6_ddrx
+ PARAMETER INSTANCE = MCB1_DDR3
+ PARAMETER HW_VER = 1.06.a
+ PARAMETER C_MCB_RZQ_LOC = M19
+ PARAMETER C_MCB_ZIO_LOC = M16
+ PARAMETER C_MEM_PARTNO = MT41J64M16XX-187E
+ PARAMETER C_INTERCONNECT_S0_AXI_MASTERS = microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC
+ PARAMETER C_INTERCONNECT_S0_AXI_AW_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_AR_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_W_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_R_REGISTER = 1
+ PARAMETER C_INTERCONNECT_S0_AXI_B_REGISTER = 1
+ PARAMETER C_S0_AXI_STRICT_COHERENCY = 0
+ PARAMETER C_MCB_LOC = MEMC1
+ PARAMETER C_S0_AXI_BASEADDR = 0x48000000
+ PARAMETER C_S0_AXI_HIGHADDR = 0x4fffffff
+ BUS_INTERFACE S0_AXI = axi4_0
+ PORT mcbx_dram_clk = mcbx1_dram_clk
+ PORT mcbx_dram_clk_n = mcbx1_dram_clk_n
+ PORT mcbx_dram_cke = mcbx1_dram_cke
+ PORT mcbx_dram_odt = mcbx1_dram_odt
+ PORT mcbx_dram_ras_n = mcbx1_dram_ras_n
+ PORT mcbx_dram_cas_n = mcbx1_dram_cas_n
+ PORT mcbx_dram_we_n = mcbx1_dram_we_n
+ PORT mcbx_dram_udm = mcbx1_dram_udm
+ PORT mcbx_dram_ldm = mcbx1_dram_ldm
+ PORT mcbx_dram_ba = mcbx1_dram_ba
+ PORT mcbx_dram_addr = mcbx1_dram_addr
+ PORT mcbx_dram_ddr3_rst = mcbx1_dram_ddr3_rst
+ PORT mcbx_dram_dq = mcbx1_dram_dq
+ PORT mcbx_dram_dqs = mcbx1_dram_dqs
+ PORT mcbx_dram_dqs_n = mcbx1_dram_dqs_n
+ PORT mcbx_dram_udqs = mcbx1_dram_udqs
+ PORT mcbx_dram_udqs_n = mcbx1_dram_udqs_n
+ PORT rzq = rzq1
+ PORT zio = zio1
  PORT s0_axi_aclk = clk_62_5000MHzPLL0
  PORT ui_clk = clk_62_5000MHzPLL0
  PORT sysclk_2x = clk_600_0000MHzPLL0_nobuf

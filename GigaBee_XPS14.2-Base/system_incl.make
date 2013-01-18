@@ -77,7 +77,8 @@ implementation/system_debug_module_wrapper.ngc \
 implementation/system_rs232_uart_1_wrapper.ngc \
 implementation/system_switches_gpio_wrapper.ngc \
 implementation/system_leds_gpio_wrapper.ngc \
-implementation/system_mcb_ddr3_wrapper.ngc \
+implementation/system_mcb3_ddr3_wrapper.ngc \
+implementation/system_mcb1_ddr3_wrapper.ngc \
 implementation/system_ethernet_wrapper.ngc \
 implementation/system_axi_timer_0_wrapper.ngc \
 implementation/system_ethernet_dma_wrapper.ngc \

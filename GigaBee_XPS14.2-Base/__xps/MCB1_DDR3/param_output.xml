@@ -483,7 +483,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_S0_AXI_HIGHADDR</spirit:name>
-        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S0_AXI_HIGHADDR"> 0x4FFFFFFF </spirit:value>
+        <spirit:value spirit:format="string" spirit:resolve="OPTIONAL" spirit:id="_component_.C_S0_AXI_HIGHADDR"> 0x4fffffff </spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter>
         <spirit:name>C_S0_AXI_STRICT_COHERENCY</spirit:name>

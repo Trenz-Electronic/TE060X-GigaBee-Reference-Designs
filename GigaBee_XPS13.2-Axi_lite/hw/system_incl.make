@@ -17,7 +17,7 @@ MHSFILE = system.mhs
 
 FPGA_ARCH = spartan6
 
-DEVICE = xc6slx45fgg484-3
+DEVICE = xc6slx100fgg484-3
 
 LANGUAGE = vhdl
 GLOBAL_SEARCHPATHOPT = 

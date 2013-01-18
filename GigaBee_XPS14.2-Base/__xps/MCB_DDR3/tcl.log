@@ -1,6 +1,6 @@
 =========================================================================
-Time: Thu Jan 17 12:45:48 Mitteleuropäische Zeit 2013
-Running: run_batch_mode 242922752
+Time: Fri Jan 18 09:27:15 Mitteleuropäische Zeit 2013
+Running: run_batch_mode 243713728
 {COLLECTING:  INSTANCE MCB_DDR3    }
 {COLLECTING:  C_INTERCONNECT_S0_AXI_MASTERS microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM OPTIONAL string none microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC & ETHERNET_dma.M_AXI_SG & ETHERNET_dma.M_AXI_MM2S & ETHERNET_dma.M_AXI_S2MM}
 {COLLECTING:  C_INTERCONNECT_S0_AXI_IS_ACLK_ASYNC 0 OPTIONAL_UPDATE integer 0 }
