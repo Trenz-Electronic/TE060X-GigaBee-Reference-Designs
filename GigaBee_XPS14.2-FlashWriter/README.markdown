@@ -31,7 +31,7 @@ Initially all LEDs off
 </tr>
 </table>
 
-The design constins all the necessary source files.
+The design contains all the necessary source files.
 The HW design is also compatible to Xilinx XAPP1026 Webserver reference design.
 
 - - -
