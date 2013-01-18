@@ -1,0 +1,22 @@
+src/main.d: ../src/main.c \
+ ../../standalone_bsp/microblaze_0/include/xparameters.h \
+ ../../standalone_bsp/microblaze_0/include/xbasic_types.h \
+ ../../standalone_bsp/microblaze_0/include/xil_cache.h \
+ ../../standalone_bsp/microblaze_0/include/mb_interface.h \
+ ../../standalone_bsp/microblaze_0/include/xbasic_types.h \
+ ../../standalone_bsp/microblaze_0/include/xil_types.h \
+ ../../standalone_bsp/microblaze_0/include/xparameters.h
+
+../../standalone_bsp/microblaze_0/include/xparameters.h:
+
+../../standalone_bsp/microblaze_0/include/xbasic_types.h:
+
+../../standalone_bsp/microblaze_0/include/xil_cache.h:
+
+../../standalone_bsp/microblaze_0/include/mb_interface.h:
+
+../../standalone_bsp/microblaze_0/include/xbasic_types.h:
+
+../../standalone_bsp/microblaze_0/include/xil_types.h:
+
+../../standalone_bsp/microblaze_0/include/xparameters.h:
