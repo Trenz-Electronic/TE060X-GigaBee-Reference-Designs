@@ -1,0 +1,10 @@
+elfcheck
+Xilinx EDK 14.2 Build EDK_P.28xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../k-boot_hw_platform/system.xml -pe microblaze_0
+eth_test.elf 
+
+ELF file	: eth_test.elf
+ERROR:EDK:756 - Cannot read XML file ../../k-boot_hw_platform/system.xml
+Error: Creating Hardware Debug Object from ../../k-boot_hw_platform/system.xml

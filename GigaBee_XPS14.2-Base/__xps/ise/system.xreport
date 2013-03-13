@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-01-18T13:16:23</DateModified>
+  <DateModified>2013-03-12T13:24:54</DateModified>
   <ModuleName>system</ModuleName>
-  <SummaryTimeStamp>2013-01-18T13:16:21</SummaryTimeStamp>
-  <SavedFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/__xps/ise/system.xreport</SavedFilePath>
+  <SummaryTimeStamp>2013-03-12T13:24:53</SummaryTimeStamp>
+  <SavedFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base_simpl/__xps/ise/system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base_simpl/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2012-12-12T10:23:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -5,7 +5,7 @@ vhdl
 -intstyle
 default
 -lp
-B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base/
+B:/GIT/TE060X-GigaBee-Reference-Designs/GigaBee_XPS14.2-Base_simpl/
 -msg
 __xps/ise/xmsgprops.lst
 system.mhs
