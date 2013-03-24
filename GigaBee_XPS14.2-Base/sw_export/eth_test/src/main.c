@@ -122,7 +122,7 @@ int main(void){
 		show_error(OW_ERR);
 	}
 	else{
-		one_wire_family(XPAR_AXI_1WIRE_0_BASEADDR, ow_addr);
+		one_wire_search(XPAR_AXI_1WIRE_0_BASEADDR, ow_addr, 8);
 		xil_printf("OW  addr %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x \r\n",
 				ow_addr[0],ow_addr[1],ow_addr[2],ow_addr[3],ow_addr[4],
 				ow_addr[5],ow_addr[6],ow_addr[7]);
