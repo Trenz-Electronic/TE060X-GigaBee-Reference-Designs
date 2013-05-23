@@ -31,6 +31,7 @@ Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/150 + TE0604
 Development environment: Xilinx XPS 13.2
 This project show simple FIFO-based access to Ethernet. Software part contain support of ARP ICMP and UDP/TFTP. Files received by TFTP writed to Flash.
 Default IP Address 192.168.42.88.
+For new modules with Memphis 4G DDR3 chips replace system.mhs by system.mhs.memphis.
 
 ## GigaBee_XPS13.2-Axi 
 
