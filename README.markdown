@@ -16,7 +16,7 @@ Open project in Xilinx EDK or ISE
 
 * Using Git
 Run Git Bash
-git clone git@github.com:Trenz-Electronic/TE060X-GigaBee-Reference-Designs.git
+git clone git://github.com/Trenz-Electronic/TE060X-GigaBee-Reference-Designs.git
 cd TE060X-GigaBee-Reference-Designs
 git submodule init
 git submodule update
@@ -28,7 +28,7 @@ In this folder you can find complete UCF file for module and baseboard.
 
 ## GigaBee_XPS14.2-Base
 Hardware: Trenz Electronic TE0600 (GigaBee) XC6SLX45/150 + TE0604
-Development environment: Xilinx XPS 13.2
+Development environment: Xilinx XPS 14.2
 This project show simple FIFO-based access to Ethernet. Software part contain support of ARP ICMP and UDP/TFTP. Files received by TFTP writed to Flash.
 Default IP Address 192.168.42.88.
 For new modules with Memphis 4G DDR3 chips replace system.mhs by system.mhs.memphis.
